@@ -13,7 +13,7 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://abhinavkakku.github.io',
+  site: 'https://ethicalhackx.com',
   integrations: [image({
     serviceEntryPoint: '@astrojs/image/sharp'
   }), sitemap(), tailwind(), mdx()]
