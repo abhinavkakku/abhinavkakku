@@ -58,4 +58,4 @@ Download jar file from Release and add in burpsuite
 
 **Decrypted Request/Response**
 
-![AES-Killer_7.png)](/public/images/AES-Killer_7.png)
+![AES-Killer_7.png)](/public/images/AES-Killer_7-1.png)
