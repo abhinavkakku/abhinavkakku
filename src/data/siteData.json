@@ -1,8 +1,8 @@
 {
-  "title": "My Astro Blog",
-  "description": "My musings about the Astro framework",
+  "title": "Ethical Hacking Tutorials",
+  "description": "Learn Hacking and Security, Offensive and Defensive Security, Reverse Engineering, and Cyber Security for Jobs and Students.",
   "image": {
-    "src": "/images/image-default.jpg",
-    "alt": "My Astro Blog"
+    "src": "/images/ethicalhackx_defaultPostCard.jpg",
+    "alt": "Ethical Hacking Tutorials"
   }
 }
