@@ -11,21 +11,25 @@ import { slugify, formatBlogPosts } from "../../js/utils";
 export async function getStaticPaths() {
   return [
     {
-      params: { category: slugify("Reference Docs") },
-      props: { name: "Reference Docs" },
+      params: { category: slugify("Offensive") },
+      props: { name: "Offensive" },
     },
     {
-      params: { category: slugify("General") },
-      props: { name: "General" },
+      params: { category: slugify("Defensive") },
+      props: { name: "Defensive" },
     },
     {
-      params: { category: slugify("CSS") },
-      props: { name: "CSS" },
+      params: { category: slugify("WebAppSec") },
+      props: { name: "WebAppSec" },
     },
     {
-      params: { category: slugify("Astro") },
-      props: { name: "Astro" },
+      params: { category: slugify("Reverse Engineering") },
+      props: { name: "Reverse Engineering" },
     },
+    {
+      params: { category: slugify("Hacking 101") },
+      props: { name: "Hacking 101" },
+    }
   ];
 }
 
