@@ -1,5 +1,4 @@
 ---
-coverImage: "network_for_hackers.jpg"
 title: Basic Union Based Injection
 date: 2017-02-25
 author: Abhinav Kumar
