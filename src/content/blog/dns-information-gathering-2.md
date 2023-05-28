@@ -46,10 +46,10 @@ In the same manner you have to change the option to get different records. **DIG
 
 Read More on Information Gathering
 
-[Information Gathering with Fierce](https://43.205.88.99/information-gathering-fierce/)
+[Information Gathering with Fierce](https://ethicalhackx.com/information-gathering-fierce/)
 
-[Information Gathering with online websites](https://43.205.88.99/information-gathering-online-websites/)
+[Information Gathering with online websites](https://ethicalhackx.com/information-gathering-online-websites/)
 
-[Information Gathering with NMAP](https://43.205.88.99/information-gathering-nmap/)
+[Information Gathering with NMAP](https://ethicalhackx.com/information-gathering-nmap/)
 
-[Reverse IP Lookup - How To Find Other Websites on Same Server](https://43.205.88.99/reverse-ip-lookup-find-websites-server/)
+[Reverse IP Lookup - How To Find Other Websites on Same Server](https://ethicalhackx.com/reverse-ip-lookup-find-websites-server/)
