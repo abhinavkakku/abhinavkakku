@@ -1,5 +1,5 @@
 ---
-title: HackTheBox - Lame [Walkthrough]
+title: HackTheBox - Lame Walkthrough
 date: 2023-05-29
 author: Abhinav Kumar
 image: {
@@ -13,16 +13,13 @@ category: HackTheBox
 
 # Lame
 
-{% embed url="https://app.hackthebox.com/machines/Lame" %}
 HackTheBox Link to Lame Machine
-{% endembed %}
 
 Initial Nmap Scan for the machine/endpoint
 
 The default scan gives no results , using -Pn switch gives FTP, SSH, NetBIOS, and SMB ports, scanning for all ports adds one more open port - 3632 . So we scan all these ports for Service versions.&#x20;
 
-```bash
-                                                                                                                                                                                                                                              
+```
 ┌──(abhinav㉿ETHICALHACKX)-[~]
 └─$ nmap lame.htb              
 Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
@@ -89,7 +86,6 @@ Host script results:
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 51.88 seconds
-
 
 ```
 
