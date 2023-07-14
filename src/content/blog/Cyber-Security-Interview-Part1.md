@@ -3,7 +3,7 @@ title: Cyber Security Interview Questions and Answers (for Jobs*)
 date: 2023-07-12
 author: Abhinav Kumar
 image: {
-  src: "/images/bash.jpeg",
+  src: "/images/Cyber_S3cur1ty_Interview_Questions.jpeg",
   alt: "Cyber Security Interview Questions and Answers",
 }
 description: Cyber Security Real Interview Questions for Jobs in different domains of Cyber Security like Offensive Devensive and more.
@@ -23,9 +23,11 @@ Answer - " Cyber Security is big domain and needs for different roles are differ
 
 Orginal Repository - https://github.com/abhinavkakku/Cyber_Security_Interview_Questions
 
+Note-1: We will keep updating this page (Last updated : 14 July, 2k23), just started so don't expect this to become encyclopedia yet
+
 --------------------
 
-- Basic Cyber Securirty Questions
+## Basic Cyber Securirty Questions
 
 Some basic questions that are very fundamental in nature, are directly or sometimes in-directly related to Cyber Security.
 These help establish some baseline, and everytime when one of these questions are asked, try to align the answer to Cyber Security.
@@ -46,7 +48,10 @@ Also, when answering these, try not to miss the basic points, often the intervie
 
 ----------
 
-Network Security Interview Questions
+## Network Security Interview Questions
+
+Questions around Networks and devices are important as this is very intrinsic part of any security setup.
+I will again repeat this - while the questions are very very basic, be prepared for follow up questions. These questions are just initiators, the actual question will the follow up question on which you will be judged. 
 
 1. What is traceroute and how do you use it ?
 2. What is SSH ? on What port does SSH works ?
@@ -71,4 +76,4 @@ Network Security Interview Questions
 boundaries?
 1. What is a honeypot?
 1. What is the difference between an HIDS and a NIDS?
-1. What is worse in detection, a false negative or a false positive? And why?
+1. What is worse in detection, a false negative or a false positive? And why? 
