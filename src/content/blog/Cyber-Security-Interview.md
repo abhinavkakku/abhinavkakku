@@ -40,13 +40,14 @@ Also, when answering these, try not to miss the basic points, often the intervie
 5. What are Ports in Computers, how many ports a computer has ?
 1. Why is deleted data not truly gone when you delete it?
 1. What is Encryption, Encoding, Hashing ?
+1. What is Salting (in context of Hashing), and why it is used ?
 1. Would you Encrypt and Compress or Compress and Encrypt ? Why ?
 1. What’s the difference between deep web and dark web?
 1. What is MITRE ATT&CK?
 1. Explain/differentiate Vulnerability and Exploit
 1. Explain Vulnerability, Threat and Risk.
 1. What is difference in VA and PT ?
-
+1. What is Diffrence Between Events, Alerts & Incidents ?
 
 
 
