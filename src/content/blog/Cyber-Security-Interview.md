@@ -3,7 +3,7 @@ title: Cyber Security Interview Questions and Answers (for Jobs*)
 date: 2023-07-12
 author: Abhinav Kumar
 image: {
-  src: "/images/Cyber_S3cur1ty_Interview_Questions.jpeg",
+  src: "/images/Cyber_Sec_Interview_Questions.jpg",
   alt: "Cyber Security Interview Questions and Answers",
 }
 description: Real Cyber Security Interview Questions for Jobs in different domains of Cyber Security like Offensive Devensive and more.
