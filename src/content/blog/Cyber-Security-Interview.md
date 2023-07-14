@@ -43,6 +43,11 @@ Also, when answering these, try not to miss the basic points, often the intervie
 1. Would you Encrypt and Compress or Compress and Encrypt ? Why ?
 1. What’s the difference between deep web and dark web?
 1. What is MITRE ATT&CK?
+1. Explain/differentiate Vulnerability and Exploit
+1. Explain Vulnerability, Threat and Risk.
+1. What is difference in VA and PT ?
+
+
 
 
 ----------
@@ -71,8 +76,11 @@ I will again repeat this - while the questions are very very basic, be prepared 
 1. Do you prefer filtered ports or closed ports on your firewall?
 1. What is a firewall? What are different types of Firewall ?
 1. How can you bypass firewall?
-1. Besides firewalls, what other devices are used to enforce network
-boundaries?
+1. Besides firewalls, what other devices are used to enforce network boundaries?
 1. What is a honeypot?
 1. What is the difference between an HIDS and a NIDS?
 1. What is worse in detection, a false negative or a false positive? And why? 
+1. What is DDoS and DoS attack ?
+1. What do you understand by IP Subnetting ?
+1. Explain NAT (Network Address Translation) ?
+1. What is Port Forwarding ? and how/why it is used ?
