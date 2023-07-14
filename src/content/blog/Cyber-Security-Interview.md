@@ -27,7 +27,7 @@ Note-1: We will keep updating this page (Last updated : 14 July, 2k23), just sta
 
 --------------------
 
-## Basic Cyber Securirty Questions
+## Basic Cyber Security Questions
 
 Some basic questions that are very fundamental in nature, are directly or sometimes in-directly related to Cyber Security.
 These help establish some baseline, and everytime when one of these questions are asked, try to align the answer to Cyber Security.
@@ -38,7 +38,6 @@ Also, when answering these, try not to miss the basic points, often the intervie
 3. What is the CIA triangle?
 4. What’s the difference between symmetric and asymmetric (public-key) cryptography?
 5. What are Ports in Computers, how many ports a computer has ?
-1. What is the difference between a black hat and a white hat?
 1. Why is deleted data not truly gone when you delete it?
 1. What is Encryption, Encoding, Hashing ?
 1. Would you Encrypt and Compress or Compress and Encrypt ? Why ?
