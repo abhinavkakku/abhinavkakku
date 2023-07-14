@@ -6,7 +6,7 @@ image: {
   src: "/images/Cyber_S3cur1ty_Interview_Questions.jpeg",
   alt: "Cyber Security Interview Questions and Answers",
 }
-description: Cyber Security Real Interview Questions for Jobs in different domains of Cyber Security like Offensive Devensive and more.
+description: Real Cyber Security Interview Questions for Jobs in different domains of Cyber Security like Offensive Devensive and more.
 draft: false
 category: Hacking 101
 ---
