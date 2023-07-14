@@ -16,7 +16,7 @@ Bash Scripting, often termed as one of the essential skills when you want to bec
 This article like many other is a progressive one, that is will be updated with more related contents.  
 This article was last updated on - **14 April 2k21.**
 
-```
+```bash
 #!/bin/bashecho "Lets Learn Scripting"
 ```
 
@@ -27,7 +27,7 @@ Usually this is the first line of script directing which interpreter to use.
 
 To execute the script, it should have executable [**permission**](/blog/linux-file-permissions-chmod-part-1/) , now you can set file permission to execute to one or more users groups to let it execute.
 
-```
+```bash
 chmod 755 myscript.sh
 ./myscript.sh
 Lets Learn Scripting
@@ -39,7 +39,7 @@ Various Shell Script interpreters
 
 So in case you want the script to be processed by zsh ksh csh, specify respectively on the first line
 
-```
+```bash
 #!/bin/zsh  
 #!/bin/ksh  
 #!/bin/csh
@@ -56,7 +56,7 @@ Conventionally Uppercase, case sensitive, and no space before or after the = sig
 To use a variable precede with variable by a "$" sign, or "${VARIABLE}".  
 The `{}` format is optional unless the variable is followed by something like below
 
-```
+```bash
 #!/bin/bash
 NAME="Hacker"
 echo "Hello $NAME , hope you are Learning"
@@ -73,7 +73,7 @@ echo "Hey! I am $VERBing #//This is wrong as the variable name changed.
 One might want to pass a command to variable name which executes and displays the result of command in place of variable.  
 So below is how to do that, instead of value pass the command enclosed in brackets and precede by $ like "$(command)"
 
-```
+```bash
 #!/bin/bash
 LINUX_KERNEL=$(uname -r)  
 echo "We are running Linux Kernel version - #{LINUX_KERNEL}
@@ -85,7 +85,7 @@ The we can write statements in bash in two ways, one being older. Enclosed in `"
 The difference is variables in `" "` will expand or will behave differently when it encounters `$ ' \` .  
 The below example should make it clear. See the output differs when enclosed in `" "` and when enclosed in `' '` .
 
-```
+```bash
 ┌──(**abhinav㉿ETHICALHACKX**)-\[**~**\]
 └─**$** user=$(whoami)
 ┌──(**abhinav㉿ETHICALHACKX**)-\[**~**\]
@@ -127,7 +127,7 @@ arg1 **OP** arg2 `OP` is one of ‘\-eq’, ‘\-ne’, ‘\-lt’, ‘\-le’,
 
 We also need to make the programs testing some conditions, `if [ condition ] then [ do this]`, let see.
 
-```
+```bash
 if [ condition-is-true ]
 then
  command1
@@ -135,7 +135,7 @@ then
 fi
 ```
 
-```
+```bash
 if [ condition-is-true ]
 then
  command1
@@ -150,7 +150,7 @@ First we test the if condition, if it evaluates to true, execute the commands sp
 
 ##### Multiple if else --> elif
 
-```
+```bash
 if [ condition-is-true ]   #dont forget the space after if
 then
  command1
@@ -167,7 +167,7 @@ fi
 
 ##### For loop
 
-```
+```bash
 for variable_name in item1 in item_n
 do
  command1
@@ -176,7 +176,7 @@ do
 done
 ```
 
-```
+```bash
 #!/bin/bash
 for food_name in burger pizza roll
  
@@ -187,7 +187,7 @@ done
 
 Instead of putting the items in for loop like above,we can assign the list to a variable.
 
-```
+```bash
 #!/bin/bash
 food="burger pizza roll"
 for food_name in $food
@@ -199,7 +199,7 @@ done
 
 The loops or rather say the commands can be a one liner too like the example below.
 
-```
+```bash
 ┌──(**abhinav㉿ETHICALHACKX**)-\[**~/bash**\]
 └─**$** foods="pizza burger noodles"
 ┌──(**abhinav㉿ETHICALHACKX**)-\[**~/bash**\]
@@ -218,11 +218,13 @@ noodles
 
 #### Accepting Input in Bash (STDIN)
 
-```read -p "PROMPT" VARIABLE_NAME```
+```bash
+read -p "PROMPT" VARIABLE_NAME
+```
 
 NOTE : This(STDIN) can also come from output of other programs/piped commands.
 
-```
+```bash
 #!/bin/bash
 read -p "Hello hacker, what's ur name  ?" HACKER_NAME
 echo " Hacker $HACKER_NAME is welcomed to Ethical Hacking Tutorials"
@@ -230,7 +232,7 @@ echo " Hacker $HACKER_NAME is welcomed to Ethical Hacking Tutorials"
 
 the -p switch is usual, want the input to be hidden ? Like a password, `-sp` (silent) will help.
 
-```
+```bash
 ┌──(**abhinav㉿ETHICALHACKX**)-\[**~/bash**\]
 └─**$** read -sp "Enter the Password : " PasswordValue
 Enter the Password :   
@@ -242,7 +244,7 @@ Enter the Password :
 
 What if there are too many cases arising and writing if-else is not a good idea, or say like a list of items to chose from will decide the consecutive actions, case statements are at our rescue
 
-```
+```bash
 case EXPRESSION in
 
   PATTERN_1)
@@ -267,7 +269,7 @@ case EXPRESSION in
 esac               #// ending the case statements , reverse of case - esac
 ```
 
-```
+```bash
 #!/bin/bash
 
 echo -n "Enter the name of a Programming Language: "
@@ -309,14 +311,14 @@ Parameters in bash are defined starting `$0 , $1, $2` and so on.
 
 So if you want to execute script with parameters, the code and output are like below ( a very simple script).
 
-```
+```bash
 #!/bin/sh
 echo " This is paramenetr 0 -- $0 "
 echo "This is parameter 1 given in bash -- $1 "
 echo "This is parameter 2 given in bash -- $2 "
 ```
 
-```
+```bash
 ┌──(**kali㉿ETHICALHACKX**)-\[**~**\]
 └─**$** chmod 755 ./bash/parameters.sh                                        126 **⨯**
                                                                                 
@@ -330,7 +332,7 @@ This is parameter 2 given in bash -- Abhinav
 We want to pass more parameters , say multiple parameters to same place ( we will see examples further how and where we can use these things/concepts).  
 Say you have to archive 10 users at once, or even remove users, expire user passwords and many more.
 
-```
+```bash
 #!/bin/sh
 
 echo " This is paramenetr 0 -- $0 "
@@ -341,7 +343,7 @@ do
 done 
 ```
 
-```
+```bash
 ┌──(**kali㉿ETHICALHACKX**)-\[**~**\]
 └─**$** ./bash/variables.sh EthicalhackX Abhinav Learning Hacking Bash
  This is paramenetr 0 -- ./bash/variables.sh 
@@ -371,7 +373,7 @@ This can be used for error checking or executing other commands based on exit st
 Below we can see when the `ls` command is successful , the status code is `0`, when otherwise, it is non 0. 
 The status command of last executed process is returned by `$?` .
 
-```
+```bash
 ┌──(**abhinav㉿ETHICALHACKX**)-\[**~**\]
 └─**$** ls /home/abhinav
 **Desktop**  **Documents**  **Downloads**  **Music**  **Pictures**  **Public**  **Templates**  **Videos**
@@ -384,7 +386,7 @@ ls: cannot access '/home/NON\_EXISTING\_DIR': No such file or directory
 ```
 an example where we are using the exit status to execute commands cehcking exit status in conditional statements.
 
-```
+```bash
 #!/bin/sh
 HOST="google.comasdwr"   #just to throw an error, invalid domain being used
 ping -c 1 $HOST
@@ -395,7 +397,7 @@ then
 fi
 ```
 
-```
+```bash
 ┌──(**abhinav㉿ETHICALHACKX**)-\[**~/bash**\]
 └─**$** ./exit\_status\_1.sh 
 ping: google.comasdwr: Name or service not known
@@ -407,7 +409,7 @@ google.comasdwr unrechable.
 #### && =AND 
 if there are two commands linked with `&&` like below, the second command only executes when the first command is successfully executed, in other words the exit status code returned from first command is `0` ( command executed successfully) , otherwise the second command won't execute.
 
-```
+```bash
 ┌──(**abhinav㉿ETHICALHACKX**)-\[**~/bash**\]
 └─**$** ls -la && echo "Last command Executed with Exit Status $?"
 total 12
@@ -426,7 +428,7 @@ if two or more commands are linked with or which is `||` , the second or consecu
 So these && and || can be used to check for conditions like execute the other command only when a set of tasks have succeeded or failed likewise.  
 In the below example see how || or functions , when exit status code is - 0, the other command won't execute, when it is non-0, the other command will execute.
 
-```
+```bash
 ┌──(**abhinav㉿ETHICALHACKX**)-\[**~/bash**\]
 └─**$** ls -la || echo "Last command Executed with Exit Status $?"
 total 16
@@ -445,7 +447,7 @@ Last command Executed with Exit Status 2
 
 When we encounter ; instead of && or || , this simply means all the commands separated by ; will execute. They can be thought of independent command and execution does not depends on previous commands exit status.
 
-```
+```bash
 command1 ; command2 ; command3
 
 can be written/or thought of as below
@@ -461,14 +463,14 @@ Mention exit {0,1,2,3....255} like exit 3 after a command. If no exit code is sp
 Also if no code is specified in whole script, agin the last exit code of command in whole script is taken.  
 Always remember, whenever you mention exit code in shell script , on reaching there the execution of shell script stops. Say a part of your script at top had exit code mentioned, and when(if) the execution flow reaches there, that is going out of script completely and return exit status code will the the one what you defined. See the below example.
 
-```
+```bash
 !/bin/bash
 echo "Statement 1 : Learn Ethical Hacking"
 exit 2
 echo "Statement 2 : Belkome to Ethicalhackx
 ```
 
-```
+```bash
 ┌──(**abhinav㉿ETHICALHACKX**)-\[**~/bash**\]
 └─**$** ./exit2.sh
 Statement 1 : Learn Ethical Hacking

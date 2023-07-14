@@ -1,0 +1,59 @@
+,# of Incidents Identified,#Observables_GapsIdentified,Completion Date,Containment time (Hrs),Deception Strategy Tweaked (# of Changes),Dwell Time (Days),Environment,Hunt Environment,Hunt ID,Hunt Scope,Hunt Theme,Hunter,Hunters,Hypothesis Automated (#s),IOCs Generated (#s),Last Comment/Update,MITRE TTPs Covered,New Detections Created (#s),Planning Doc,Remarks,Report,Risks Identified,Scope,Status,TT Ticket,Target End Date,Target Start Date,Trigger
+0,0.0,,,0.0,0.0,0.0,,Internal,TH0001,,MS Build tools,nisgrove@,,2.0,0.0,,,4.0,Link,,Link,0.0,Internal,Complete,D38712658,2022-03-04,2022-02-14,Planned
+1,0.0,,,0.0,1.0,0.0,,Internal,TH0002,,PoS Devices,nisgrove@ tabbaa@,,3.0,0.0,,,7.0,Link,,Link,11.0,Internal,Complete,D40939263,2022-04-19,2022-03-08,Planned
+2,0.0,,,0.0,0.0,0.0,,Internal,TH0003,,Backdoor Hunt,debasman@,,1.0,0.0,,,1.0,Link,,Link,0.0,Internal,Complete,D58084046,2022-04-30,2022-03-20,Incident
+3,0.0,,,0.0,0.0,0.0,,Internal,TH0004,,Ransomware Tactics,debasman@,,4.0,0.0,,,19.0,Link,,Link,1.0,Internal,Complete,D47058096,2022-06-03,2022-05-03,Planned
+4,0.0,,,0.0,1.0,0.0,,Conduit,TH0005,,Cloud Initial Access,mattnasi@ nisgrove@,,4.0,0.0,,,4.0,Link,,Link,6.0,Cloud,Complete,D47072233,2022-09-16,2022-08-08,Planned
+5,0.0,,,0.0,2.0,0.0,,Internal,TH0006,,IAM & Active Directory,hskla@ jatinji@,,4.0,0.0,,,4.0,Link,,Link,3.0,Internal,Complete,D55781031,2022-08-26,2022-07-18,Planned
+6,0.0,,,0.0,0.0,0.0,,Conduit,TH0008,,"Cloud Execution, Priv Escalation, & Exfiltration",jatinji@,,4.0,0.0,,,4.0,Link,,Link,0.0,Cloud,Complete,D59056370,2022-11-21,2022-09-05,Planned
+7,,,,,,,,Conduit,TH0007,,Cloud Container/Kubernetes  (Moved to Next Year),tabbaa@ debasman@ preecer@,,,,,,,Link,,Link,,Cloud,Planning,D58065238,2022-11-18,2022-10-01,Planned
+8,,,,,,,,Conduit,TH0009,,Cloud Persistence & Defense Evasion  (Moved to Next Year),nisgrove@ bhanu@ jymalik@,,,,,,,Link,,Link,,Cloud,To be Started,D59623649,2023-01-31,2023-01-01,Planned
+9,0.0,,2022-12-30,0.0,0.0,0.0,,Internal,TH0010,,Potential DNS C2,mattnasi@ rmdeboda@,,0.0,0.0,,,0.0,Link,,Link,2.0,Internal,Complete,V739975335,2022-12-02,2022-10-17,Planned
+10,,,,,,,,Internal,TH0011,,Retail Specific Threat Hunt (Moved to Next Year),edmiles@ max@,,,,,,,,,,,Internal,Planning,,2022-12-30,2022-11-14,Planned
+11,0.0,,2023-01-08,0.0,0.0,0.0,,Internal,TH0012,,Linux Malware TTP Hunt,survya@ archacho@  rmdeboda@,,4.0,0.0,,,4.0,Link,,Link,0.0,Internal,Complete,D64811925,2022-12-30,2022-11-14,Planned
+12,2.0,,2022-12-07,0.0,0.0,0.0,,Internal,TH0013,,AFTLite F3 Threat Hunting,survya@ nisgrove@,,0.0,0.0,,,6.0,Link,,Link,5.0,Internal,Complete,D61841505,2022-11-30,2022-10-31,Adhoc
+0,,,2023-03-24,,,,WFM,,TH0007,Conduit,Cloud Container/Kubernetes,,"Abdul Tabbakha, debasman@amazon.com",,,,7.0,,Link,,Link,,Cloud,Complete,D58065238,2023-02-23,2022-10-01,Planned
+1,,,,,,,WFM,,TH0011,Internal,Retail Specific Threat Hunt,,Ed Miles,,,Abhinav Kumar - @abhkakku@amazon.com  will work with @Ed to carry out execution,,,Link,,,,Internal,Planning,,2022-12-30,2022-11-14,Planned
+2,0.0,1.0,2023-03-30,0.0,,0.0,WFM,,TH0015,Internal,Stealing NTLM Hashes,,Abhinav Kumar,4.0,,,1.0,2.0,Link,"Supporting Links:
+
+https://vegardw.medium.com/using-lnk-files-to-steal-netntlmv2-hashes-while-living-off-the-land-63a10d35711d
+
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Active%20Directory%20Attack.md#scf-and-url-file-attack-against-writeable-share",Link,0.0,Internal,Complete,D76074108,2023-03-09,2023-01-23,Planned
+3,1.0,2.0,2023-02-28,0.0,0.0,0.0,WFM,,TH0019,Internal,Bad Chrome and Firefox Browser Extensions,,debasman@amazon.com,4.0,0.0,,1.0,4.0,Link,,Link,1.0,Internal,Complete,D71390632,2023-02-28,2023-02-01,Planned
+4,,,,,,,WFM,,TH0009,Conduit,Cloud Persistence & Defense Evasion,,"Ayush Dosaj, Bhanu Chandar Adari, Nishant Grover",,,,6.0,,Link,,,,Cloud,Execution,D75680003,2023-05-31,2023-03-01,Planned
+5,,,,,,,WFM,,TH0014,Internal,Hunting for Exploitation Framework Tool- CobaltStrike,,"Archan Choudhury, Rahul Kumar Kumawat",,,Abhinav Kumar - Update the Quip Doc,6.0,,Link,"Supporting Links:
+
+https://anomali.infosec.amazon.dev/threat-bulletin/1000000132
+
+https://thedfirreport.com/2021/08/29/cobalt-strike-a-defenders-guide/",,,Internal,Execution,D76013986,2023-04-14,2023-03-20,Planned
+6,,,2023-06-28,,,,WFM,,TH0022,Internal,Powershell Attacks,,"Abhinav Kumar, Rob DeBoda",,,Abhinav Kumar - modified date as per execution email sent,,,Link,Links: https://www.giac.org/paper/gsec/23549/hunting-gathering-powershell/121279,,,Internal,Execution,P88426132,2023-06-16,2023-04-03,Planned
+7,,,,,,,WFM,,TH0024,Internal,Defense Evasion,,"debasman@amazon.com, survya singh",,,,,,,"Supporting Links: https://blog.f-secure.com/dechaining-macros-and-evading-edr/
+https://blog.f-secure.com/detecting-parent-pid-spoofing/",,,Internal,To be Started,,,2023-09-04,Planned
+8,,,,,,,WFM,,TH0032,Internal,Service accounts Abuse(Non-Human accounts),,"Gopinath Rao, Nishtha Tripathi",,,Abhinav Kumar - moving to next to next month,,,,,,,Internal,Planning,,,2023-06-01,Planned
+9,,,,,,,WFM,,TH0020,Internal,Windows privilege escalation attacks,,"Jatin Kumawat, Nishtha Tripathi",,,,,,Link,,,,Internal,Execution,D82131421,2023-06-09,2023-05-01,Planned
+10,,,,,,,WFM,,TH0026,Internal,Active Directory Attacks - Malicious GPO/Azure AD Credential Harvesting,,"Kiran Nair, Senthil Loganathan",,,,,,,,,,Internal,To be Started,,,2023-06-01,Planned
+11,,,,,,,WFM,,TH0030,Internal,Hunt for Exfil tools (Atleast 10),,"Gopinath Rao, Shreya Khochare",,,,,,,,,,Internal,To be Started,,,2023-05-15,Planned
+12,,,,,,,WFM,,TH0021,Internal,Data exfiltration activities,,Jatin Kumawat,,,,,,,,,,Internal,To be Started,,2023-07-31,2023-07-01,Planned
+13,,,,,,,WFM,,TH0023,Internal,WMI Attacks,,"Nishtha Tripathi, Rob DeBoda",,,,,,,,,,Internal,To be Started,,,2023-07-01,Planned
+14,,,,,,,WFM,,TH0027,Conduit,TBD cloud TH,,mattnasi@amazon.com,,,,,,,,,,Cloud,To be Started,,2023-08-01,2023-07-01,Planned
+15,,,,,,,WFM,,TH0028,Internal,Payload Downloads through LOLBas,,"Rob DeBoda, survya singh",,,,,,,"https://www.bleepingcomputer.com/news/security/hackers-now-use-microsoft-onenote-attachments-to-spread-malware/
+
+Downloads by Curl, bitsadmin, certutil, etc",,,Internal,To be Started,,,,Planned
+16,,,,,,,WFM + Go,,TH0029,Internal,Legit Remote Admin Tools (At least 10),,"Mayank Luthra, Senthil Loganathan",,,,,,,"Supporting Links: https://www.securityweek.com/us-government-agencies-warn-of-malicious-use-of-remote-management-software/
+
+Cover at least 10 of Remote Admin tools",,,Internal,To be Started,,,,Planned
+17,,,,,,,WFM,,TH0031,Internal,Windows Service Tampering & baselining to hunt down illegal services used as a persistence mechanism,,Gopinath Rao,,,,,,,,,,Internal,To be Started,,,,Planned
+18,,,,,,,WFM,,TH0033,Internal,Privilege abuse - Endpoint Admin accounts,,"Gopinath Rao, Nishtha Tripathi",,,,,,,,,,Internal,To be Started,,,,Planned
+19,,,,,,,WFM,,TH0034,Internal,Files with Alternate Datastream,,,,,,,,,,,,Internal,To be Started,,,,Planned
+20,,,,,,,,,TH0035,Internal,Hunt For WebKit and Chromium based Suspicious Browsers,,debasman@amazon.com,,,,,,Link,,,,,Planning,,,2023-05-02,Planned
+21,,,,,,,,,TH0036,Internal,Hunting Network Beacons in the environment,,Ayush Dosaj,,,,,,,,,,,To be Started,,,,Planned
+22,,,,,,,,,TH0037,Internal,Hunt for suspicious execution of Curl & Wget commands,,,,,,,,,Suggested by Nishant,,,,To be Started,,,,Planned
+23,,,,,,,,,TH0038,Internal,Hunt for suspicious files downloaded with an IP address in the URL,,,,,,,,,Suggested by Nishant,,,,To be Started,,,,Planned
+24,,,,,,,WFM,,TH0039,Conduit,Hunt for vulnerabilities in AWS Lambda Functions using Inspector,,Ayush Dosaj,,,,,,,"Suggested by @adosaj
+Support Links - https://aws.amazon.com/blogs/security/how-to-scan-your-aws-lambda-functions-with-amazon-inspector/",,,Cloud,To be Started,,,,Planned
+25,,,,,,,,,TH0040,,,,,,,,,,,,,,,,,,,
+26,,,,,,,,,TH0041,,,,,,,,,,,,,,,,,,,
+27,,,,,,,,,TH0016,,,,,,,,,,,,,,,,,,,
+28,,,,,,,,,TH0018,,,,,,,,,,,,,,,,,,,
+29,,,,,,,,,TH0025,,,,,,,,,,,,,,,,,,,
+30,,,,,,,,,TH0017,,,,,,,,,,,,,,,,,,,
