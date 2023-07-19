@@ -85,3 +85,17 @@ I will again repeat this - while the questions are very very basic, be prepared 
 1. What do you understand by IP Subnetting ?
 1. Explain NAT (Network Address Translation) ?
 1. What is Port Forwarding ? and how/why it is used ?
+
+----
+
+## Intermediate Level Questions
+
+Now that you have answered some basic questions, lets level up a bit.
+These might not be very good, but keeping in mind to keep answer to the realm of Security, focus on security aspect when answering these.
+
+1. What is Three-way-Handshake ? Explain. 
+2. How many packets are sent and received in 3-way handshake ?
+3. Explain BruteForce Attack . How do you detect it ?
+4. Explain Password Spraying Attack. How do you detect it ?
+5. How can you prevent Brute Force attack ? Mention some methods.
+6. Have you heard of 2FA ?  How 2FA protects users ?
