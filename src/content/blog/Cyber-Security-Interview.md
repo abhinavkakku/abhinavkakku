@@ -99,3 +99,14 @@ These might not be very good, but keeping in mind to keep answer to the realm of
 4. Explain Password Spraying Attack. How do you detect it ?
 5. How can you prevent Brute Force attack ? Mention some methods.
 6. Have you heard of 2FA ?  How 2FA protects users ?
+7. What is difference in SSL and TLS ?
+8. What is use of SSL ? How it protects ?
+9. How SSL Certificate Exchange happens ?
+10. What do you understand by DMZ and Non-DMZ ?
+12. What is Meta Data and how can you view it ? What Risk it causes ?
+13. Explain TCP and UDP . How they differ ? 
+14. What is DNS ? How DNS Resolution happens ? Which Port is used for DNS  ? is it over TCP or UDP ?
+15. What is DLP ? Heard of it ?
+16. What is Data Exfiltration ? Mention some methods of Data Exfiltration. 
+17. How can you check for Data Exfiltration Activities ?
+
