@@ -201,7 +201,7 @@ Again, the questions here are not guessed, can be limitless, so just putting ver
 
 SOC Analysts can be Clark Kent (superman) touching multiple parts of tech, having a grip over some and idea of many helps many times. Also the questions in a basic SOC job can start from any section above or below and land to this part of page. I will try to keep it concise to the topic.
 
-Note : SOC Analysts work around many different tech, so questions expect to judge the knowledge around some system, which can make resonse (or handling) around some Incident/Attack better. 
+Note : SOC Analysts work around many different tech, so questions expect to judge the knowledge around some system, which can make response (or handling) around some Incident/Attack better. 
 
 Note-2 : Questions in SOC Analyst Role and Incident Response are expected to be asnwered with scenarios and response action, so cover all possible paths you can think of.
 
