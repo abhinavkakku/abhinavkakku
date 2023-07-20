@@ -51,7 +51,7 @@ Also, when answering these, try not to miss the basic points, often the intervie
 1. What is difference in VA and PT ?
 1. What is Diffrence Between Events, Alerts & Incidents ?
 1. What is APT Groups ( in Cyber Security Context ) ?
-
+2. Any experience on working with any Ticketing tools ? 
 
 
 ----------
@@ -189,7 +189,11 @@ Again, the questions here are not guessed, can be limitless, so just putting ver
 16. Name some tools you use in Network Pentesting.
 17. How do you report Vulnerability or Security Gaps after pentesting ? (Report Writing)
 17. Do you work often with patching teams to report and get patched the vulnrable software or fixing security gaps ?
-
+18. What are some HTTP Status codes you monitor during pentest ? Explain some interesting ones.
+19. What is a 0-Day (Zero-Day) attack ?
+20. What is Sub-Domain Takeover. Explain.
+21. How can you detect presence of a WAF ( Web Application Firewall),( and which one) ?
+22. What is C2 Server (Command and Control) ?
 
 ----
 
@@ -232,8 +236,10 @@ Note-2 : Questions in SOC Analyst Role and Incident Response are expected to be 
 21. Can website with Green-Lock (SSL) be dangerous ? 
 22. You discover your Infrastructure / Application is under DDoS attack ? What will be your resonse plan ?
 23. How would you advise backup policy of critical data in infrastructure ?
-
-
+24. What are some interesting logs you can collect in Windows Environment ?
+24. What are the logs from a Linux machine you would pick for SIEM ?
+25. What is SIEM ? Its Use ? ( More SIEM based questions in a small section later on same page)
+26. What are different DNS Records ? Explain.
 ----
 
 ## Malware Anaysis
