@@ -113,7 +113,7 @@ These might not be very good, but keeping in mind to keep answer to the realm of
 15. What is DLP ? Heard of it ?
 16. What is Data Exfiltration ? Mention some methods of Data Exfiltration. 
 17. How can you check for Data Exfiltration Activities ?
-18. Expect some questions on common ports and services, like SMB, DNS FTP, SSH, SMTM, HTTP, HTTPS, DHCP, questions based on some log analysis or directly can be asked, if you are observing too much traffic to/from on port 22, what steps you take ?
+18. Expect some questions on common ports and services, like SMB, DNS FTP, SSH, SMTP, HTTP, HTTPS, DHCP, questions based on some log analysis or directly can be asked, if you are observing too much traffic to/from on port 22, what steps you take ?
 19. How do you place a firewall, load balancer, proxy ? in what order and why ?
 
 
