@@ -115,20 +115,22 @@ These might not be very good, but keeping in mind to keep answer to the realm of
 17. How can you check for Data Exfiltration Activities ?
 18. Expect some questions on common ports and services, like SMB, DNS FTP, SSH, SMTP, HTTP, HTTPS, DHCP, questions based on some log analysis or directly can be asked, if you are observing too much traffic to/from on port 22, what steps you take ?
 19. How do you place a firewall, load balancer, proxy ? in what order and why ?
-
+20. What information can you get from MAC Address ?
 
 ----
 
-## Application Security Questions
+## Application Security Questions (and Pentesting)
 
 When explaining any Vulnerability here, also try mentioning remidiation for the same, and more deep dive if follow up questions asked.
 
 1. Heard of OWASP ? What is it ? name some Vulnerabilities from OWASP-T10.
+1. What is Vulnerability Assesment, Pentesting , and Red teaming. Differences ?
 2. How do you handle Brute Forcing on your application ?
 3. What is Authentication and Authorization ? 
 4. How does HTTP handles state ?
 5. What is Cross Site Scripting ? 
 6. What is difference in stored , reflected, and DOM XSS ?
+7. Which of the XSS attacks are hard to detetct and why ?
 7. What is the defense against XSS ? Remidiation. 
 6. Do you prefer black-listing approach or whitelisting approach ? and Why ?
 7. What is CSRF ? Impact ? and Remidiation ?
@@ -138,7 +140,83 @@ When explaining any Vulnerability here, also try mentioning remidiation for the 
 11. Name some Types of SQL Injection Vulnerability. 
 12. How do you protect against SQLi ?
 13. What is Prepared Statements and Paramatrized Query ? (in Context of SQLi)
+13. What is 2nd-Order-SQLi ?
 14. How do you store password for applications in database ?
+15. What is RCE ? How do you test for RCE ? How can this bug be remidiated ?
+16. Explain OS Command Injection .
+17. What is CORS ? and SOP ?
+18. Does CORS protect against CSRF Attack ?
+19. Explain XXE ? What causes this flaw ? How do you mitigate it ? 
+20. What are some Security headers in HTTP Request. name some.
+21. What is CSP (Content Security Policy) ?
+22. Explain Race Condition ? How can you test for it ?
+23. What is Threat Modeling ?
+24. What are some common Risks in Mobile Applications ?
+25. When do you interact with developers for security testing ?
+25. Are you aware of the Software Development Life Cycle ?
+26. When in SDLC should you engage with Developers ?
+27. What is CI/CD Pipeline ?  Explain the role of this with the context of Security.
+28. Classify some Web Vulnerabilities into Low, Medium , High and Critical category. Reason why !
+29. Known that MD5 is not the most secured hasing Algorithm, Why we dont use SHA256 or others always ?
+
+### Pentesting (Network/Endpoints)
+
+Again, the questions here are not guessed, can be limitless, so just putting very basic ones. This does NOT pertains to like - Hey ! These are asked in Pentesting Interviews.
+
+1. How do you start about hacking a target ? What is Information Gathering, Enumeration ?
+2. What NMAP argument/flag in nmap tells about version ?
+3. What is difference in -v and -V in NMAP ?
+4. Can SQLi lead to RCE ?
+5. How do you erase tracks when hacked a machine ? consider it is linux.
+6. What is your opinion on Automated Pentesting ? vs Manual Pentesting ? Which one is better ?
+7. What is difference in Black-Box Pentesting vs White-Box Pentesting ?
+8. Any Purple Teaming Exercises done in past ? Explain.
+8. Have you done any Phishing assesments in past ? 
+9. How can you bypass Antivirus Detection ? Explain.
+10. How does EDR works ? How to bypass EDR Detections ? Explain.
+11. What is Supply Chain Attack ?
+
+
+----
+
+## SOC Analyst | Incident Response | DFIR
+
+SOC Analysts can be Clark Kent (superman) touching multiple parts of tech, having a grip over some and idea of many helps many times. Also the questions in a basic SOC job can start from any section above or below and land to this part of page. I will try to keep it concise to the topic.
+
+Note : SOC Analysts work around many different tech, so questions expect to judge the knowledge around some system, which can make resonse (or handling) around some Incident/Attack better. 
+
+Note-2 : Questions in SOC Analyst Role and Incident Response are expected to be asnwered with scenarios and response action, so cover all possible paths you can think of.
+
+1. How can you break password of BIOS on a locked machine. How to do same on Laptop ( expected follow-up).
+2. Where is password Stored in Windows Machines ?
+3. How can you read SAM File in Windows ? How does it stores passwords ?
+4. Mention some methods you crack Windows Password.
+5. Lets talk about Linux system passwords , where is it stored ? which hash it uses ? 
+6. How can you detect malicious activity around both SAM and passwd/shadow file respectively ? ( say things you should be monitoring and how ?)
+7. What is Incident Response ?
+8. What is LifeCycle of a Incident Response Process ?
+8. I hope you understand the Idea of P0, P1.2.3.4 Incidents ? Which one will you handle with priority ?
+8. What is IOC (Indicators of Compromise) and IOA (Indicators of Attack) ?
+9. How can you say if an email is Phishing or not ?
+10. What will you do if user reports to have phishing email ?
+11. You discover user clicked links in phishing email, also shared credentials. What actions will be taken by you ?
+12. SPM DKIM DMARC records are related to ?
+13. How can you determine if the email spam ? what is the action taken to arrest the spread of same if you have to act ?
+14. make a playbook for case of BEC ( Business Email Compromise ).
+15. When a user reports their machine is hacked , what are the things yu look for ?
+15. What are some malware persistence Techniques ? 
+16. What is Process Injection ? Name some (sub)methods.
+17. Which one is more acceptable Sypware or PUP ?
+18. What would you prefer on your system ? Rootkit or Backdoor ?
+19. Why Ransomware is a buzz word ?
+19. How can you detect/confirm that you (organisation) has been hit (affected) by ransomware ? What are the indicators ?
+19. How do you respond to a Ransomware attack ?
+20. Have you worked on any EDR Tools before ? What makes EDR different from Antivirus ?
+21. How/Why would you classify a website as malicious ?
+21. What is drive-by-downloads ?
+21. Can website with Green-Lock (SSL) be dangerous ? 
+
+
 
 ----
 
@@ -151,7 +229,7 @@ Hontesly I have no-clue of this branch, but questions on compliance standards , 
 
 ----
 
-## Scenario based questions
+## Opinion based questions or Scenario....
 
 These questions are to know your views, and there is usually no right or wrong answer here. It is more of a discussion to know your opinions , the way you see the problem or solve it, there is/are always more approaches to solve the problem.
 
