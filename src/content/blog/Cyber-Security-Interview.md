@@ -23,7 +23,7 @@ Answer - " Cyber Security is big domain and needs for different roles are differ
 
 Orginal Repository - https://github.com/abhinavkakku/Cyber_Security_Interview_Questions
 
-Note-1: We will keep updating this page (Last updated : 20 July, 2k23), just started so don't expect this to become encyclopedia yet
+Note-1: We will keep updating this page (Last updated : 21 July, 2k23), just started so don't expect this to become encyclopedia yet
 
 Note-2: Some questions can fall under more than one Category, forgive me for that, I will try not to repeat. Yet some questions that have very broad scope of followup questions maybe repeated ( as it gives context).
 
@@ -148,6 +148,8 @@ When explaining any Vulnerability here, also try mentioning remidiation for the 
 18. Does CORS protect against CSRF Attack ?
 19. Explain XXE ? What causes this flaw ? How do you mitigate it ? 
 20. What are some Security headers in HTTP Request. name some.
+20. What are various HTTP methods ?
+20. What is difference in GET POST and PUT Request ?
 21. What is CSP (Content Security Policy) ?
 22. Explain Race Condition ? How can you test for it ?
 23. What is Threat Modeling ?
@@ -175,6 +177,17 @@ Again, the questions here are not guessed, can be limitless, so just putting ver
 9. How can you bypass Antivirus Detection ? Explain.
 10. How does EDR works ? How to bypass EDR Detections ? Explain.
 11. What is Supply Chain Attack ?
+12. Compromising a local account is easier or an AD account ? (Windows Context)
+13. How would you do Data Exfiltration if you hacked a machine ?
+14. have you worked on Nessus / Qualys before ?
+14. Any open source alternative of Nessus or Qualys ?
+14. What do you prefer ? Vulnerbaility Assessment of a machine with Credentials or without Credentials ?
+14. What are things to consider before doing Pentesting or Vulnerability Assesment of a targt ?
+14. Would you place the machine (server example Nessus) within the same Network of machines which is being tested or seperate ?
+14. Why or Why not will you whitelist the Source machine of attack in Penetration Testing or Vulnerability Assesement ?
+15. How do you rate Vulnerability ? Eplain scoring system or frameworks.
+16. Name some tools you use in Network Pentesting.
+17. How do you report Vulnerability or Security Gaps after pentesting ? (Report Writing)
 
 
 ----
@@ -195,6 +208,7 @@ Note-2 : Questions in SOC Analyst Role and Incident Response are expected to be 
 6. How can you detect malicious activity around both SAM and passwd/shadow file respectively ? ( say things you should be monitoring and how ?)
 7. What is Incident Response ?
 8. What is LifeCycle of a Incident Response Process ?
+8. What is SLA ?
 8. I hope you understand the Idea of P0, P1.2.3.4 Incidents ? Which one will you handle with priority ?
 8. What is IOC (Indicators of Compromise) and IOA (Indicators of Attack) ?
 9. How can you say if an email is Phishing or not ?
@@ -215,8 +229,15 @@ Note-2 : Questions in SOC Analyst Role and Incident Response are expected to be 
 21. How/Why would you classify a website as malicious ?
 21. What is drive-by-downloads ?
 21. Can website with Green-Lock (SSL) be dangerous ? 
+22. You discover your Infrastructure / Application is under DDoS attack ? What will be your resonse plan ?
+23. How would you advise backup policy of critical data in infrastructure ?
 
 
+----
+
+## Malware Anaysis
+
+This will be updated soon
 
 ----
 
