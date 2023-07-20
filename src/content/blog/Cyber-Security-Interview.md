@@ -188,6 +188,7 @@ Again, the questions here are not guessed, can be limitless, so just putting ver
 15. How do you rate Vulnerability ? Eplain scoring system or frameworks.
 16. Name some tools you use in Network Pentesting.
 17. How do you report Vulnerability or Security Gaps after pentesting ? (Report Writing)
+17. Do you work often with patching teams to report and get patched the vulnrable software or fixing security gaps ?
 
 
 ----
