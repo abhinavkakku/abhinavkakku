@@ -79,7 +79,9 @@ I will again repeat this - while the questions are very very basic, be prepared 
 1. How is TCP/IP Layer Different from OSI Layers in Networking?
 1. Do you prefer filtered ports or closed ports on your firewall?
 1. What is a firewall? What are different types of Firewall ?
-1. How can you bypass firewall?
+1. How can you bypass firewall? or IDS ?
+1. What is Fragmentation attack ?
+1. How can Fragmentation be used as DoS Attack ? How can this be avoided or handled ?
 1. Besides firewalls, what other devices are used to enforce network boundaries?
 1. What is a honeypot?
 1. What is the difference between an HIDS and a NIDS? Exmaples of both.
@@ -89,6 +91,7 @@ I will again repeat this - while the questions are very very basic, be prepared 
 1. Explain NAT (Network Address Translation) ?
 1. What is Port Forwarding ? and how/why it is used ?
 1. What is VLAN ?
+1. What Security Principle means a signed message came from the owner of key that signed it ? (non-repundiation, Integrity, authority, -non-verifiability)
 
 ----
 
@@ -163,6 +166,8 @@ Again, the questions here are not guessed, can be limitless, so just putting ver
 22. What is C2 Server (Command and Control) ?
 23. Mention some SSL/TLS related Vulnerabilities.
 24. Have you come across any recent Data Breach, explain how it happened . (and IR Part : How we can protect against the same ?)
+25. How does NMAP determines the Operating System of the target ?
+
 
 
 ## Application Security
@@ -209,6 +214,8 @@ Again, the questions here are not guessed, can be limitless, so just putting ver
 30. Internet facing NGINIX is being used in front of multiple applications (micro service architecture). These application are accessible to users via different sub-domains through NGINIX, What can go Wrong ?
 31. Can server SSL Certificate prevent SSL Injection against your system ? Explain.
 32. An Attacker is trying to extract session cookie using XSS Vulnerability, but a blank popup is shown. What could be the reason for this behaviour ?
+33. Web Application allows user to download their account statement in DF format. How can you securely implement this functionality ? Explain.
+34. 
 
 ### Mobile Application Pentesting
 24. What are some common Risks in Mobile Applications ?
