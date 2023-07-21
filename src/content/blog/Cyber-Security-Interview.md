@@ -103,9 +103,8 @@ These might not be very good, but keeping in mind to keep answer to the realm of
 1. What is Three-way-Handshake ? Explain. 
 2. How many packets are sent and received in 3-way handshake ?
 3. Explain BruteForce Attack . How do you detect it ?
-4. Explain Password Spraying Attack. How do you detect it ?
 5. How can you prevent Brute Force attack ? Mention some methods.
-6. Have you heard of 2FA ?  How 2FA protects users ?
+6. Have you heard of 2FA ?  How 2FA protects users ? Is it possible to bypass 2FA with Phishing ?
 7. What is difference in SSL and TLS ?
 8. What is use of SSL ? How it protects ?
 9. How SSL Certificate Exchange happens ?
@@ -167,6 +166,7 @@ Again, the questions here are not guessed, can be limitless, so just putting ver
 23. Mention some SSL/TLS related Vulnerabilities.
 24. Have you come across any recent Data Breach, explain how it happened . (and IR Part : How we can protect against the same ?)
 25. How does NMAP determines the Operating System of the target ?
+26. What is difference in Pass-the-Hash and Pass-the-Ticket ?
 
 
 
@@ -286,7 +286,10 @@ Note-2 : Questions in SOC Analyst Role and Incident Response are expected to be 
 31. Can you do Network backet Analysis of HTTPS (SSL Enabled) traffic with Wireshark ?
 24. What are the logs from a Linux machine you would pick for SIEM ?
 24. What is SIEM ? Its Use ? ( More SIEM based questions in a small section later on same page)
-
+25. Describe some Incident that you faced, and how you handled it ?
+26. How do you Investigate a suspicious Login alert for a business user email?
+27. What is difference in Credential Stuffing ? and password Spraying ? How do you detect these ?
+28. Make a use-case of Password Spraying attack.
 ----
 
 ## Malware Anaysis
