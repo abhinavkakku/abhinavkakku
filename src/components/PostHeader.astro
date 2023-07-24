@@ -1,13 +1,28 @@
 ---
 // library imports
 import { Image } from "@astrojs/image/components";
+import { AstroSeo } from '@astrolib/seo';
 
 // utils imports
 import { slugify, formatDate } from "../js/utils";
 
 const { category, title, author, date, image } = Astro.props;
 ---
-
+<AstroSeo
+  title="EthicalhackX Test1"
+  description="A short description goes here."
+  titleTemplate=" - Ethical Hacking Tutorials"
+  defaultTitle="Ethical Hacking Tutorials"
+  canonical="https://ethicalhackx.com/"
+  twitter.cardType="summary_large_image"
+  twitter.site="@ethicalhackx"
+  twitter.handle="@abhinavkakku"
+  openGraph.url=""
+  openGraph.title=""
+  openGraph.description=""
+  openGraph.images="tst4"
+  openGraph.site_name="Ethical Hacking Tutorials"
+/>
 <header>
   <div class="container">
     <small>
