@@ -23,7 +23,7 @@ Answer - " Cyber Security is big domain and needs for different roles are differ
 
 Orginal Repository - https://github.com/abhinavkakku/Cyber_Security_Interview_Questions
 
-Note-1: We will keep updating this page (Last updated : 21 July, 2k23), just started so don't expect this to become encyclopedia yet
+Note-1: We will keep updating this page (Last updated : 24 July, 2k23), just started so don't expect this to become encyclopedia yet
 
 Note-2: Some questions can fall under more than one Category, forgive me for that, I will try not to repeat. Yet some questions that have very broad scope of followup questions maybe repeated ( as it gives context).
 
