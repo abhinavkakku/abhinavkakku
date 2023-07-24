@@ -188,6 +188,9 @@ Again, the questions here are not guessed, can be limitless, so just putting ver
 9. How do you determine if the Website is hosted on IIS or Apache or Nginix or whatever server stack ?
 10. What is SQL Injection ?
 11. Name some Types of SQL Injection Vulnerability. 
+11. Explain Union Based SQL Injection.
+11. Explain Time Based SQL Injection.
+11. Explain Blind SQL Injection.
 12. How do you protect against SQLi ?
 13. What is Prepared Statements and Paramatrized Query ? (in Context of SQLi)
 13. What is 2nd-Order-SQLi ?
