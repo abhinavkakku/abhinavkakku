@@ -16,6 +16,7 @@
   "dependencies": {
     "@astrojs/image": "^0.12.2-beta.0",
     "@astrojs/mdx": "^0.19.7",
+    "@astrojs/prism": "^2.1.2",
     "@astrojs/rss": "^2.0.0",
     "@astrojs/sitemap": "^1.0.0",
     "@astrolib/seo": "^0.4.0",
@@ -25,6 +26,8 @@
     "astro-icon": "^0.8.0",
     "postcss": "^8.4.21",
     "postcss-preset-env": "^7.8.3",
+    "prism": "^1.0.0",
+    "prismjs": "^1.29.0",
     "rehype": "^12.0.1",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-sanitize": "^5.0.1",

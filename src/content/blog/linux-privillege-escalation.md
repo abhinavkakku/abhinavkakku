@@ -1,12 +1,14 @@
 ---
-title: Bash for Hackers
-date: 2021-03-05
+title: Linux Privillege Escalation
+date: 2023-07-30
 author: Abhinav Kumar
 image: {
   src: "/images/bash.jpeg",
-  alt: "Bash for Hackers",
+  alt: "Linux Privilege Escalation",
 }
-description: Bash for hackers is about essentials of Bash that people in security should know, a Bash crash course for hackers.
-draft: true
+description: Linux Privilege Escalation techniqies for elevating user privillege .
+draft: false
 category: Hacking 101
 ---
+
+## Linux Privillege Escalation Techniques
