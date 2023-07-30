@@ -15,14 +15,23 @@
   },
   "dependencies": {
     "@astrojs/image": "^0.12.2-beta.0",
+    "@astrojs/mdx": "^0.19.7",
     "@astrojs/rss": "^2.0.0",
     "@astrojs/sitemap": "^1.0.0",
     "@astrolib/seo": "^0.4.0",
-    "astro": "^2.0.0-beta.3",
+    "astro": "^2.9.6",
     "astro-color-scheme": "^1.1.2",
     "astro-icon": "^0.8.0",
     "postcss": "^8.4.21",
     "postcss-preset-env": "^7.8.3",
-    "sharp": "^0.31.3"
+    "rehype": "^12.0.1",
+    "rehype-sanitize": "^5.0.1",
+    "rehype-stringify": "^9.0.3",
+    "remark": "^14.0.3",
+    "remark-parse": "^10.0.2",
+    "remark-rehype": "^10.1.0",
+    "remark-toc": "^8.0.1",
+    "sharp": "^0.31.3",
+    "to-vfile": "^8.0.0"
   }
 }
