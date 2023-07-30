@@ -7,7 +7,7 @@ image: {
   alt: "Linux Privilege Escalation",
 }
 description: Linux Privilege Escalation techniqies for elevating user privillege .
-draft: false
+draft: true
 category: Hacking 101
 ---
 
