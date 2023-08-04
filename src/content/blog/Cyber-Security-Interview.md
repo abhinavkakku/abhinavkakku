@@ -298,7 +298,8 @@ Note-2 : Questions in SOC Analyst Role and Incident Response are expected to be 
 
 ## Malware Anaysis
 
-This will be updated soon
+1. What types of Malware Analysis are posible ?
+2. Explain Static Analysis and Dynamic Analysis of Malwares. 
 
 ----
 
