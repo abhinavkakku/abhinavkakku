@@ -22,22 +22,30 @@ Linux commands that are often used by hackers, security professional and CTF pla
 10.10.196.20 blue.thm
 ```
 
+### Nmap
+
+```bash
+sudo nmap -sC -sV -p- -T5 -Pn targethost
+sudo nmap -sU -sV -p- -T5 -Pn targethost
+```
+
 Start Metasploit with database
 
 
 
 Cracking hash with John
 
-'''bash
+```bash
 ──(abhinav㉿ETHICALHACKX)-[~]
 └─$ john hash --format=NT --wordlist=/usr/share/wordlists/rockyou.txt 
-'''
+```
 
 Cracking hash with hashcat
 
 Windows NTLM Hash
-
-hashcat -m 1000 -a 0 hash /usr/share/wordlists/rockyou.txt.gz  
+```bash
+hashcat -m 1000 -a 0 hash /usr/share/wordlists/rockyou.txt.gz
+```
 
 Metasploit Shell Upgrade to Meterpreter
 sessions -u 3
@@ -52,7 +60,9 @@ Gz Files
 
 gunzip archive.gz
 
+```bash
 tar –xvzf archive.tar.gz
+```
 
 ## SSH Connection 
 
