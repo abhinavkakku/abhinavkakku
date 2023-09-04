@@ -326,4 +326,5 @@ cat /root/root.txt
 ## Learnings
 
 1- Overly permissive misconfigurations should be looked for, here was scriptmanager user.
+
 2- WebShell exposure to public even when not linked to webpage, should be avoided. We discovered this via gobuster.
