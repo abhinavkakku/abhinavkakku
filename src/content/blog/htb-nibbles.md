@@ -1,6 +1,6 @@
 ---
 title: HackTheBox - Nibbles w/o Metasploit
-date: 2023-09-04
+date: 2023-09-05
 author: Abhinav Kumar
 image: {
   src: "/images/htb-nibbles.png",
