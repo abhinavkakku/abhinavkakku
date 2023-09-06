@@ -6,7 +6,7 @@ image: {
   src: "/images/Cyber_Sec_Interview_Questions.jpg",
   alt: "Cyber Security Interview Questions and Answers",
 }
-description: Real Cyber Security Interview Questions , Penetration tester Interview Questions, SOC Analyst Interview Questions, Malware Analyst, Red Team Engineer and more Interview Questions.
+description: Real Cyber Security Interview Questions for Penetration Testers, SOC Analysts, Malware Analyst, Red Team Engineer and more.
 draft: false
 category: Hacking 101
 ---
