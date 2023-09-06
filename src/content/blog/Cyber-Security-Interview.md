@@ -1,17 +1,17 @@
 ---
-title: Cyber Security Interview Questions and Answers (for Jobs*)
+title: Cyber Security Interview Questions (for Jobs*)
 date: 2023-07-12
 author: Abhinav Kumar
 image: {
   src: "/images/Cyber_Sec_Interview_Questions.jpg",
   alt: "Cyber Security Interview Questions and Answers",
 }
-description: Real Cyber Security Interview Questions for Jobs in different domains of Cyber Security like Offensive Devensive and more.
+description: Real Cyber Security Interview Questions , Penetration tester Interview Questions, SOC Analyst Interview Questions, Malware Analyst, Red Team Engineer and more Interview Questions.
 draft: false
 category: Hacking 101
 ---
 
-Cyber Security Interview Questions is for students and working professionals who are preparing to get into , or switch to Cyber Security Job Roles . These questions are mostly crowd-sources , hence for many it may seem very trivial. I shall also add some questions that I faced in Cyber Security Interviews.
+Cyber Security Interview Questions for Penetration Testers, Red Team Engineers, SCO Analyst, Malware Researchers, Network Security Engineers and more. These are real questions faced by candidates in different domain interviews. These questions can help serious Job seekers and students alike who want to enter Cyber Security and clueless what might be asked in Interviews.
 
 Different Cyber Security Job Roles - A look at different domains in Cyber Security, this is not perfect, but still can help to get some idea of different roles one might take in CYber Security Jobs
 
@@ -23,7 +23,7 @@ Answer - " Cyber Security is big domain and needs for different roles are differ
 
 Orginal Repository - https://github.com/abhinavkakku/Cyber_Security_Interview_Questions
 
-Note-1: We will keep updating this page (Last updated : 21 August, 2k23), just started so don't expect this to become encyclopedia yet
+Note-1: We will keep updating this page (Last updated : 06 September, 2k23), just started so don't expect this to become encyclopedia yet. I have removed the answers bit for now, might be updated in future.
 
 Note-2: Some questions can fall under more than one Category, forgive me for that, I will try not to repeat. Yet some questions that have very broad scope of follow-up questions maybe repeated ( as it gives context).
 
