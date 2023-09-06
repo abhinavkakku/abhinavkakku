@@ -21,7 +21,7 @@ HackTheBox Link to Cronos Machine - [HTB-Bashed](https://app.hackthebox.com/mach
 ┌──(abhinav㉿ETHICALHACKX)-[~]
 └─$ echo '10.10.10.13    cronos.htb' | sudo tee /etc/hosts 
 [sudo] password for abhinav: 
-10.10.10.13    cronos.htb
+10.10.10.13    cronos.htb 
                                                                                 
 ┌──(abhinav㉿ETHICALHACKX)-[~]
 └─$ nmap -p- cronos.htb          
