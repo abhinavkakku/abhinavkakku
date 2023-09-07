@@ -4,7 +4,7 @@ date: 2023-08-08
 author: Abhinav Kumar
 image: {
   src: "/images/bash.jpeg",
-  alt: "Bash for Hackers",
+  alt: "Linux Commands for Everyday Hacking and Security",
 }
 description: Linux commands and shortcuts very often used by Hackers, Security professionals, CTF Players.
 draft: false
