@@ -30,7 +30,24 @@ sudo nmap -sC -sV -p- -T5 -Pn targethost
 
 #for UDP Scan
 sudo nmap -sU -sV -p- -T5 -Pn targethost
+
+# Store scan results for ports separated by comma.
+┌──(abhinav㉿ETHICALHACKX)-[~]
+└─$ ports=$(nmap -p- --min-rate=1000 -T4 cronos.htb | grep ^[0-9] | cut -d '/' -f 1 | tr '\n' ',' | sed 's/,$//')
+
+# Check which ports are found
+┌──(abhinav㉿ETHICALHACKX)-[~]
+└─$ echo $ports
+22,53,80,9227,19041,30100
+
+# Pass the information in -p argument as $ports
+┌──(abhinav㉿ETHICALHACKX)-[~]
+└─$ sudo nmap -sC -sV -A -O -T5 -p$ports cronos.htb
 ```
+
+
+
+
 
 Start Metasploit with database
 

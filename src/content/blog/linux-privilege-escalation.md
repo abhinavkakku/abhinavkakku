@@ -14,7 +14,7 @@ category: Hacking 101
 Linux Privilege Escalation.
 
 This article like many other is a progressive one, that is will be updated with more related contents.  
-This article was last updated on - **August 05, 2023.**
+This article was last updated on - **September 07, 2023.**
 
 
 ## System Enumeration
@@ -27,7 +27,7 @@ cat /etc/issue
 architecture information  - lscpu
 
 
-What services are running - 
+What Process are running - 
 
 ps -aux  [ in order they started]
 ps -aux | grep root - to find all that root is doing 
@@ -96,3 +96,13 @@ passwd
 
 get root
 
+
+## Root Path
+
+Check if one or more Root path variables are writable
+
+```bashs                                                         
+┌──(abhinav㉿ETHICALHACKX)-[~]
+└─$ env | grep $PATH
+PATH=/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+```
