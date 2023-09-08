@@ -68,12 +68,18 @@ HOP RTT       ADDRESS
 
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 20.68 seconds
-                                                                                
-┌──(abhinav㉿ETHICALHACKX)-[~]
-└─$ 
+
 ```
 
+Directory Enumeration
 
+```bash
+┌──(abhinav㉿ETHICALHACKX)-[~]
+└─$ gobuster dir -u  http://cronos.htb/ --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --threads 200 --quiet
+/css                  (Status: 301) [Size: 306] [--> http://cronos.htb/css/]
+/js                   (Status: 301) [Size: 305] [--> http://cronos.htb/js/]
+/server-status        (Status: 403) [Size: 298]
+```
 
 ### Initial Shell
 
