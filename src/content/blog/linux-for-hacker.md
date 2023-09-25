@@ -140,9 +140,8 @@ wpscan --url https://brainfuck.htb --disable-tls-checks
 ## Directory Enumeration
 
 ```bash
-                                                                                                                                                                        
 ┌──(abhinav㉿ETHICALHACKX)-[~]
-└─$ ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://cronos.htb/FUZZ -mc 200,300,301,302,303,403 -c -t 400
+└─$ ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://cronos.htb/FUZZ -mc 200,403 -c -t 400
 
 
                                                                                                                                                                          
