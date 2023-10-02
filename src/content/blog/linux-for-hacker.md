@@ -12,6 +12,7 @@ category: Hacking 101
 ---
 
 Linux commands that are often used by hackers, security professional and CTF players. We will avoid any payloads or oneliner exploits ( will cover in different page sometime).
+Updated - October 02, 2023.
 
 ### Add Target to hosts file
 
@@ -47,11 +48,32 @@ sudo nmap -sU -sV -p- -T5 -Pn targethost
 
 
 
-
+## Metasploit
 
 Start Metasploit with database
+```bash
+# Pass the information in -p argument as $ports
+┌──(abhinav㉿ETHICALHACKX)-[~]
+└─$ systemctl start postgresql
 
+┌──(abhinav㉿ETHICALHACKX)-[~]
+└─$ msfdb init
+Creating database user 'msf'
+Enter password for new role:
+Enter it again:
+Creating databases 'msf' and 'msf_test'
+Creating configuration file in /usr/share/metasploit-framework/config/database.yml
+Creating initial database schema
+```
 
+### Metasploit Shell Upgrade to Meterpreter
+
+```bash
+sessions -u 3
+sessions -u -1
+use post/multi/manage/shell_to_meterpreter
+run session=-1
+```
 
 Cracking hash with John
 
@@ -60,53 +82,55 @@ Cracking hash with John
 └─$ john hash --format=NT --wordlist=/usr/share/wordlists/rockyou.txt 
 ```
 
-Cracking hash with hashcat
+### Cracking hash with hashcat
 
 Windows NTLM Hash
 ```bash
 hashcat -m 1000 -a 0 hash /usr/share/wordlists/rockyou.txt.gz
 ```
 
-Metasploit Shell Upgrade to Meterpreter
-sessions -u 3
-sessions -u -1
-use post/multi/manage/shell_to_meterpreter
-run session=-1
+
 
 
 ## Extract Files
 
 Gz Files
 
+```bash
 gunzip archive.gz
+```
 
+tar Files
 ```bash
 tar –xvzf archive.tar.gz
 ```
 
 ## SSH Connection 
 
+```bash
 ssh username@host -oHostKeyAlgorithms=+ssh-dss
+```
 
 
 ## Text Filter
 
-grep -i ]- inlcude
-grep -v ]- exclude
-
+```bash
+grep -i #]- inlcude
+grep -v #]- exclude
+```
 ## SMB Enumeration
 
 nmap
 
 ```bash
-nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.232.56
+nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse target_HOST
 ```
 
 ```bash
 smbclient //IP/directory
 ```
 
-mount NFS
+Mount NFS Share
 
 make directory locally and mount it
 ```bash
@@ -116,8 +140,9 @@ sudo mount IP:/folder /mnt/sampleDIR
 ## netcat
 
 get version via banner
+```bash
 nc IP port
-
+```
 ## Linpeas
 
 # From github
@@ -143,8 +168,7 @@ wpscan --url https://brainfuck.htb --disable-tls-checks
 ┌──(abhinav㉿ETHICALHACKX)-[~]
 └─$ ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://cronos.htb/FUZZ -mc 200,403 -c -t 400
 
-
-                                                                                                                                                                         
+                                                   
 ┌──(abhinav㉿ETHICALHACKX)-[~]
 └─$ gobuster dir -u  http://cronos.htb/ --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --threads 200 --quiet
 
