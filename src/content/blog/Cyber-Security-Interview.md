@@ -122,6 +122,9 @@ These might not be very good, but keeping in mind to keep answer to the realm of
 21. What port does PING works on ? ( I will change this Ping thing, too much resued now)
 22. Describe TCP Flow Control mechanism. (not potential question anymore, but know this)
 23. Describe packet loss recovery mechanism in TCP. (not potential question anymore, but know this)
+24. Explain how in Linux terminal can you confirm if it is a file or a directory ?
+25. Explain Redirections in Linux.
+26. What are pipes ? Explain named Pipe.
 
 ----
 
@@ -340,6 +343,7 @@ More questions based on some experience  coming here soon. As Cyber Sec Intervie
 5. Have you worked with Python Web Requests ? possibly parsing the response in desired format.
 6. Write program to do the Network Packet Analysis , maybe fetch the .exe or .elf payload data from Network data captured in PCAP file.
 7. Write a RegEx to filter  websites / URL / URL with Queries / Email Address / IP Address  / Phone Number (10-digits)
+8. (Bash) - replace all occurance of string - string_1 with string_1_1 in text file.
 
 More questions based on some projects and required coming here soon.
 
