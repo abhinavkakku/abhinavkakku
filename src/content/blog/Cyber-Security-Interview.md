@@ -82,6 +82,8 @@ I will again repeat this - while the questions are very very basic, be prepared 
 1. How can you bypass firewall? or IDS ?
 1. What is Fragmentation attack ?
 1. How can Fragmentation be used as DoS Attack ? How can this be avoided or handled ?
+1. Mention few types of DoS Attacks .
+1. How do you distinguish between legitimate traffic and attack traffic during DDoS Attack ?
 1. Besides firewalls, what other devices are used to enforce network boundaries?
 1. What is a honeypot?
 1. What is the difference between an HIDS and a NIDS? Exmaples of both.
@@ -93,6 +95,7 @@ I will again repeat this - while the questions are very very basic, be prepared 
 1. What is VLAN ?
 1. What Security Principle means a signed message came from the owner of key that signed it ? (non-repundiation, Integrity, authority, -non-verifiability)
 1. What is ARP Poisoning ?
+1. What is DNS Poisoning ?
 
 ----
 
@@ -174,6 +177,7 @@ Again, the questions here are not guessed, can be limitless, so just putting ver
 24. Have you come across any recent Data Breach, explain how it happened . (and IR Part : How we can protect against the same ?)
 25. How does NMAP determines the Operating System of the target ?
 26. What is difference in Pass-the-Hash and Pass-the-Ticket ?
+27. What is OAuth and SAML ? Explain.
 
 
 
@@ -228,6 +232,7 @@ Again, the questions here are not guessed, can be limitless, so just putting ver
 33. Web Application allows user to download their account statement in DF format. How can you securely implement this functionality ? Explain.
 34. What is Threat Model / Threat Modeling ?
 34. What is STRIDE ?
+
 
 ### Mobile Application Pentesting
 24. What are some common Risks in Mobile Applications ?
@@ -308,6 +313,7 @@ Note-2 : Questions in SOC Analyst Role and Incident Response are expected to be 
 
 1. What types of Malware Analysis are posible ?
 2. Explain Static Analysis and Dynamic Analysis of Malwares. 
+3. What is difference in Process and Thread ?
 
 ----
 
@@ -345,8 +351,20 @@ More questions based on some experience  coming here soon. As Cyber Sec Intervie
 7. Write a RegEx to filter  websites / URL / URL with Queries / Email Address / IP Address  / Phone Number (10-digits)
 8. (Bash) - replace all occurance of string - string_1 with string_1_1 in text file.
 9. You have a source file of program and want to maintain as such - every parenthesis open and close have exactly 1 whitespace after and before, where white space is not present add it, where extra white-space, remove extra and keep one. How do you programatically solve this ?
+10. Write a script to find out if a list of web pages is live or not.
+11. Write script to list all files that contain the word - 'yyy' .
+12. Can you grep for line matches with two words - 'sss' , 'ttt' . 
 
 More questions based on some projects and required coming here soon.
+
+---
+
+## Cryptography
+
+1. What’s the difference between symmetric and asymmetric (public-key) cryptography? (repeated)
+2. How do you differentiate Encryption / Hashing/ Encoding ?
+3. Mention one instance of failure you noticed cryptography is used incorrectly.
+
 
 ---
 
