@@ -173,3 +173,23 @@ wpscan --url https://brainfuck.htb --disable-tls-checks
 └─$ gobuster dir -u  http://cronos.htb/ --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --threads 200 --quiet
 
 ```
+
+## Reading a File
+
+```bash
+cat
+head
+head -20 filepathandname
+tail filename
+tail -20 filename
+cat filename | grep "word_to_filter"
+more
+less
+
+```
+
+## Replace in Fil
+
+```bash
+sed /s/wordtoreplace/wordtoreplacewith/g /filepath > outputfilepath
+```

@@ -188,3 +188,16 @@ Save the file and terminate the text editor session. Then, restart the Network M
 
 sudo service network-manager restart
 
+Adding new user
+adduser abhinav
+
+Sudo privilleges for new user
+
+sudo -aG sudo abhinav
+
+granting login shell
+chsh -s /bin/bash abhinav
+
+
+tilix Terminal Multiplexer
+sudo apt install tilix guake konsole -y
