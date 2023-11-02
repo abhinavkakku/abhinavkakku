@@ -23,7 +23,7 @@ Answer - " Cyber Security is big domain and needs for different roles are differ
 
 Orginal Repository - https://github.com/abhinavkakku/Cyber_Security_Interview_Questions
 
-Note-1: We will keep updating this page (Last updated : 06 September, 2k23), just started so don't expect this to become encyclopedia yet. I have removed the answers bit for now, might be updated in future.
+Note-1: We will keep updating this page (Last updated : 02 November, 2k23), just started so don't expect this to become encyclopedia yet. I have removed the answers bit for now, might be updated in future.
 
 Note-2: Some questions can fall under more than one Category, forgive me for that, I will try not to repeat. Yet some questions that have very broad scope of follow-up questions maybe repeated ( as it gives context).
 
@@ -120,6 +120,8 @@ These might not be very good, but keeping in mind to keep answer to the realm of
 19. How do you place a firewall, load balancer, proxy ? in what order and why ?
 20. What information can you get from MAC Address ?
 21. What port does PING works on ? ( I will change this Ping thing, too much resued now)
+22. Describe TCP Flow Control mechanism. (not potential question anymore, but know this)
+23. Describe packet loss recovery mechanism in TCP. (not potential question anymore, but know this)
 
 ----
 
@@ -337,6 +339,7 @@ More questions based on some experience  coming here soon. As Cyber Sec Intervie
 4. Write code to fetch valid email address from json file, email address can have ( . _ numbers )
 5. Have you worked with Python Web Requests ? possibly parsing the response in desired format.
 6. Write program to do the Network Packet Analysis , maybe fetch the .exe or .elf payload data from Network data captured in PCAP file.
+7. Write a RegEx to filter  websites / URL / URL with Queries / Email Address / IP Address  / Phone Number (10-digits)
 
 More questions based on some projects and required coming here soon.
 
