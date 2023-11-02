@@ -344,6 +344,7 @@ More questions based on some experience  coming here soon. As Cyber Sec Intervie
 6. Write program to do the Network Packet Analysis , maybe fetch the .exe or .elf payload data from Network data captured in PCAP file.
 7. Write a RegEx to filter  websites / URL / URL with Queries / Email Address / IP Address  / Phone Number (10-digits)
 8. (Bash) - replace all occurance of string - string_1 with string_1_1 in text file.
+9. You have a source file of program and want to maintain as such - every parenthesis open and close have exactly 1 whitespace after and before, where white space is not present add it, where extra white-space, remove extra and keep one. How do you programatically solve this ?
 
 More questions based on some projects and required coming here soon.
 
