@@ -16,7 +16,7 @@ const blog = defineCollection({
         "For best SEO results, please keep the description under 160 characters."
       ),
     draft: z.boolean().default(false),
-    category: z.string(),///enum(["Offensive", "Defensive", "WebAppSec", "HackTheBox", "Hacking 101", "TryHackMe"]),
+    category: z.string(),///enum(["Offensive", "Defensive", "WebAppSec", "HackTheBox", "Hacking 101", "TryHackMe", "RE"]),
   }),
 });
 

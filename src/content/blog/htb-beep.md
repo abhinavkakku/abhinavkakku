@@ -107,3 +107,4 @@ abhinav@ETHICALHACKX:~$ gobuster dir -u  https://beep.htb/ --wordlist /usr/share
 /vtigercrm            (Status: 301) [Size: 309] [--> https://beep.htb/vtigercrm/]
 
 ```
+
