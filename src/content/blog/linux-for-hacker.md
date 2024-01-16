@@ -188,7 +188,7 @@ less
 
 ```
 
-## Replace in Fil
+## Replace in File
 
 ```bash
 sed /s/wordtoreplace/wordtoreplacewith/g /filepath > outputfilepath

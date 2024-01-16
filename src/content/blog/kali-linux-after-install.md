@@ -1,36 +1,45 @@
 ---
-title: Things to do After installing Kali Linux
-date: 2023-09-25
+title: My Kali Linux Setup {things I do after install}
+date: 2024-01-16
 author: Abhinav Kumar
 image: {
-  src: "/images/bash.jpeg",
-  alt: "Linux Commands for Everyday Hacking and Security",
+  src: "/images/my_kali_linux_setup.png",
+  alt: "My Kali Linux Setup",
 }
-description: Linux commands and shortcuts very often used by Hackers, Security professionals, CTF Players.
-draft: true
+description: My Kali Linux Setup, things that I do / modify after installing Kali Linux.
+draft: False
 category: Hacking 101
 ---
 
-Update and Upgrade
+My Kali Linux Setup, things that I configure or modify or install everytime I am setting up my machine.
+This is not a must do list, this is just me who does these.
+
+## Update and Upgrade
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
 ```
 
-Change Hostname
+## Change Hostname
+If you have downloaded VM/VBox Image and want to rename the hostname to something specific {EthicalHackX}  like me.
 ```bash
 sudo hostnamectl set-hostname "ETHICALHACKX"
 ```
 
-Change Default Repository
+## Change Default Repository
+I must admit Kali Linux Repositories have improved alot over the years with mirrors and default CDNs. AT some environments we can observe the default repository to be blocked, in organisations specally, how to escape, how to get more speed from a nearby mirror, change the default repository config, use a different mirror.
 
 ```bash
-echo "deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware" | sudo tee /etc/apt/sources.list```
+echo "deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware" | sudo tee /etc/apt/sources.list
+```
+
+I prefer to enable the deb-src mirror too.
 
 ```bash
 echo "deb-src http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware" | sudo tee -a /etc/apt/sources.list
 ```
 
+## Setup some alias (command-shortcuts) for your terminal.
 
 Alias for common tasks
 ```bash
@@ -40,7 +49,9 @@ alias ls='ls --color=always'
 alias grep="grep --color=auto"
 ```
 
-Functions in zshrc
+We can also add some functions in bashrc or zshrc files like below.
+Functions in .zshrc / .bashrc , these files are located in user folder , type cd ~/.zshrc to access or edit.
+
 ```bash
 updater() {
   sudo apt update -y 2> /dev/null;
@@ -59,6 +70,7 @@ Essential Tweaks
 #!/usr/bin/bash
 echo "Removing boilerplate home directories!"
 mv $HOME/Downloads/* $HOME
+#carefull , if you already have something in below directories, move it.
 sudo rm -rf $HOME/{.vim,Downloads,Pictures,Documents,Music,Videos}
 
 #Updating sources with fast mirrors
@@ -77,127 +89,160 @@ touch $HOME/ctf/target
 mkdir -p $HOME/ctf/{htb,thm}
 ```
 
-Update and Upgrade
-sudo apt update
-sudo apt upgrade
-sudo apt dist-upgrade
 
-Install Additional reposiroties
+### Install Additional reposiroties
+to be edited
+```bash
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+```
 
+```bash
 sudo apt install software-properties-common
+```
 
+### Install Archive Managers
 
-Install Archive Managers
-
+```bash
 sudo apt-get install unrar unace rar unrar p7zip zip unzip p7zip-full p7zip-rar file-roller -y
+```
 
-Obtain the latest or current Kali GPG keys
-
-$ wget -q -O - https://www.kali.org/archive-key.asc | gpg --import
+### Obtain the latest or current Kali GPG keys
+to  be verified if this is really required or can be ignored
+```bash
+wget -q -O - https://www.kali.org/archive-key.asc | gpg --import
 # or…
 
-$ gpg --keyserver hkp://keys.gnupg.net --recv-key 7D8D0BF6
+gpg --keyserver hkp://keys.gnupg.net --recv-key 7D8D0BF6
+```
 
-Install Guest Additions to Enable Fullscreen, Clipboard sharing & Drag n Drop
+### Install Guest Additions to Enable Fullscreen, Clipboard sharing & Drag n Drop
 to be added
+```bash
+sudo apt install open-vm-tools -y
+```
 
-Change your SSH Keys & default Password
+### Change your SSH Keys & default Password
+
+```bash
 cd /etc/ssh
 mkdir original_ssh_keys
 mv ssh_host_* original_ssh_keys/
 dpkg-reconfigure openssh-server
+```
 
-Install Java:
-
+### Install Java:
 to be added
 
 
-Install Screen Recorder
+### Install Screen Recorder
+I have been using Kali in VM like environemnt where I use OBS Studio on host instead of recorder in Kali
+```bash
 apt-get install recordmydesktop
+```
 
-
-Setup Wine to use WIndwos apps
+### Setup Wine to use Windows apps
 to be added
 
-Install Terminator.
+### Install Terminator.
+```bash
 sudo apt-get install terminator
+```
 
-Install Code Editor
-Visual Studio Code (VS Code):
+### Tilix Terminal Multiplexer
+only if you need.
+```bash
+sudo apt install tilix guake konsole -y
+```
+
+### Install Code Editor
+Visual Studio Code (VS Code): ( I prefer over others)
+```bash
 sudo apt install code
+```
 Sublime Text:
+```bash
 sudo apt install sublime-text
+```
 Atom:
+```bash
 sudo apt install atom
+```
 
 
-
-Install VLC: 
+### Install VLC: (because fun is must)
+```bash
 sudo apt install vlc
-
-Install Aptitude, Gdebi and Synaptic
+#if VLC does not runs as expected 
+sudo sed -i s/geteuid/getppid/g /usr/bin/vlc```
+### Install Aptitude, Gdebi and Synaptic
+```bash
 sudo apt-get install aptitude gdebi synaptic
-
-Configure Google DNS / OpenDNS Servers
+```
+### Configure Google DNS / OpenDNS Servers
+to be edited
 By using Google or OpenDNS can make your internet a bit more smooth.
 The Google DNS addresses are – “8.8.8.8 and 8.8.4.4“
 The OpenDNS addresses are – “208.67.222.222 and 208.67.220.220“
 
-Install Chromium
+### Install Chromium
+```bash
 sudo apt-get install chromium
+```
 
-
-Disable your Lock Screen
+### Disable your Lock Screen
 Go to the Settings > now goto Power Manager > click on the Display tab and disable the blue button.
 
 
- sudo apt install open-vm-tools -y
 
 
- Install VLC Media Player
- sudo apt install vlc
- sudo sed -i s/geteuid/getppid/g /usr/bin/vlc
+### Install/Explore different desktop environments
+```bash
+sudo apt install kali-desktop-gnome
+sudo apt install kali-desktop-{kde|xfce|gnome......}
+```
 
+### Enable autologin for a seamless login experience
+I do this , many may find this as bad practice but.... 
 
-Explore different desktop environments
-sudo apt install gnome-core
-sudo apt install <desktop-environment>
-
-
-Enable autologin for a seamless login experience
-
+```bash
 sudo nano /etc/lightdm/lightdm.conf
+```
 Within the file, find the [SeatDefaults or Seat*] section and add the following lines:
 
+```
 autologin-user=<your-username>
 
 autologin-user-timeout=0
+```
 
 
-
-Resolve the “Device Not Managed” error
+### Resolve the “Device Not Managed” error
 You need to modify the Network Manager configuration file to resolve this issue. Launch the configuration file in a text editor:
 
-sudo nano /etc/NetworkManager/NetworkManager.conf
+```bash sudo nano /etc/NetworkManager/NetworkManager.conf
+```
 Within the file, add the following lines under the [device] section:
 
+```
 wifi.scan-rand-mac-address=no
-
+```
 Save the file and terminate the text editor session. Then, restart the Network Manager service to apply the changes:
 
+```bash
 sudo service network-manager restart
-
-Adding new user
+```
+### Adding new user
+```bash
 adduser abhinav
+```
 
-Sudo privilleges for new user
+### Sudo privilleges for new user
 
+```bash
 sudo -aG sudo abhinav
-
-granting login shell
+```
+### Granting login shell
+```bash
 chsh -s /bin/bash abhinav
+```
 
-
-tilix Terminal Multiplexer
-sudo apt install tilix guake konsole -y
