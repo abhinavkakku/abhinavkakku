@@ -64,33 +64,52 @@ updater() {
 }
 ```
 
-Essential Tweaks
+## Essential Tweaks
 
+### Remove Boilerplate home directories
 ```bash
 #!/usr/bin/bash
 echo "Removing boilerplate home directories!"
 mv $HOME/Downloads/* $HOME
 #carefull , if you already have something in below directories, move it.
 sudo rm -rf $HOME/{.vim,Downloads,Pictures,Documents,Music,Videos}
+```
 
-#Updating sources with fast mirrors
+### Updating sources with fast mirrors
+
+```bash
 echo "deb https://mirrors.ocf.berkeley.edu/kali kali-rolling main contrib non-free" | sudo tee -a /etc/apt/sources.list
 echo "deb-src https://mirrors.ocf.berkeley.edu/kali kali-rolling main contrib non-free" | sudo tee -a /etc/apt/sources.list
 
+# Update the Repository after changing mirror
 sudo apt update -y
-sudo apt install -y kali-archive-keyring git stow python3 neovim curl python3 zsh tmux texlive-latex-recommended texlive-fonts-extra texlive-latex-extra pandoc evince
+```
 
-wget https://bootstrap.pypa.io/get-pip.py -O get-pip.py && sudo python3 get-pip.py
-python3 -m pip install --upgrade pip
 
+## CTF Setup !!
+
+### Create Diretory for CTF / Attacks
+```bash
 mkdir -p $HOME/ctf
 touch $HOME/ctf/target
 
 mkdir -p $HOME/ctf/{htb,thm}
 ```
 
+### Essential Packages to Install
 
-### Install Additional reposiroties
+```bash
+sudo apt install -y kali-archive-keyring git stow python3 neovim curl python3 zsh tmux texlive-latex-recommended texlive-fonts-extra texlive-latex-extra pandoc evince
+
+sudo apt install html2text
+
+#python3-pip
+wget https://bootstrap.pypa.io/get-pip.py -O get-pip.py && sudo python3 get-pip.py
+python3 -m pip install --upgrade pip
+
+```
+
+### Install Additional repositories
 to be edited
 ```bash
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
