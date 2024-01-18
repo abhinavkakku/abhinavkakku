@@ -310,19 +310,22 @@ thm(){
 
 
 ### 7. Adding new user
-I never add another user to my machine, mostly it is only me who is using it. So not adding user.
+With newer Kali Linux installs, it does asks for username when instaling Kali, yet if u need to create another user, below is how to, Why mention ? 
 
 ```bash
 adduser abhinav
+#or to create a admin user
+sudo adduser abhinav sudo
 ```
 
 #### Sudo privilleges for new user
 
 ```bash
-sudo -aG sudo abhinav
+sudo usermod -aG sudo abhinav
+
 ```
 #### Granting login shell
 ```bash
-chsh -s /bin/bash abhinav
+chsh -s /bin/zsh abhinav
 ```
 
