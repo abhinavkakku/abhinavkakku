@@ -93,6 +93,10 @@ By using Google or OpenDNS can make your internet a bit more smooth.
 The Google DNS addresses are – “8.8.8.8 and 8.8.4.4“
 The OpenDNS addresses are – “208.67.222.222 and 208.67.220.220“
 
+```bash
+echo "nameserver 1.1.1.1" | sudo tee /etc/resolv.conf
+```
+
 ### 4.6 Enable autologin for a seamless login experience
 I do this , many may find this as bad practice but.... 
 
@@ -118,7 +122,7 @@ sudo apt install software-properties-common
 
 
 ```bash
-sudo apt install -y kali-archive-keyring git stow python3 neovim curl python3 zsh tmux texlive-latex-recommended texlive-fonts-extra texlive-latex-extra pandoc evince seclists python-is-python3
+sudo apt install -y kali-archive-keyring git stow python3 neovim curl python3 zsh tmux texlive-latex-recommended texlive-fonts-extra texlive-latex-extra pandoc evince seclists python-is-python3 golang
 ```
 
 
@@ -214,13 +218,22 @@ sudo apt install kali-desktop-{kde|xfce|gnome......}
 
 ## 6. Setup some alias (command-shortcuts) for your terminal.
 
+Getting your local WiFi or LAn IP and Tunnel IP (HTB or THM OpenVPN IP)
+```bash
+#alias for getting VPN IP
+alias myip="ip -o -4 addr show eth0 | awk '{print \$4}' | cut -d'/' -f1"
+alias tunip="ip -o -4 addr show tun0 | awk '{print \$4}' | cut -d'/' -f1"```
+
 Alias for common tasks
 ```bash
 alias ins="sudo apt install -y"
 alias rem="sudo apt purge -y"
 alias ls='ls --color=always'
+alias ll="clear && ls --color=always -rthla"
 alias grep="grep --color=auto"
 ```
+# if you created a CTF Directory like me from above
+alias ctf="cd $HOME/ctf && ll"
 
 ```bash
 #add these to .zshrc or .bashrc
@@ -243,9 +256,57 @@ updater() {
 }
 ```
 
+```bash
+# Extract file, example. "ex archive.tar.bz2"
+ex() {
+    if [[ -f $1 ]]; then
+        case $1 in
+            *.tar.bz2)   sudo tar -xjf $1;;
+            *.tar.gz)    sudo tar -xzf $1;;
+            *.bz2)       sudo bunzip2 $1;;
+            *.rar)       sudo rar -x $1;;
+            *.gz)        sudo gunzip $1;;
+            *.tar)       sudo tar -xf $1;;
+            *.tbz2)      sudo tar -xjf $1;;
+            *.tgz)       sudo tar -xzf $1;;
+            *.zip)       sudo unzip $1;;
+            *.Z)         sudo uncompress $1;;
+            *.7z)        sudo 7z -x $1;;
+            *)           echo $1 cannot be extracted;;
+        esac
+    else
+        echo $1 is not a valid file
+    fi
+}
+```
 
 
+```bash
+#----- Directories recon -----
+# I prefer output on the screen and hence output flag and part of command tee -a $2 ar eboth missing in my config.
+#gobustdir <url> <output>
+gobustdir(){sudo gobuster dir -u "$1" -w "/usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt" -t 10 | tee -a $2}
+```
+The below functions can be added to zshrc or bashrc to ease out, remember to have the CTF directory setup ( from above), and placed the respective OpenVPN file in mentioned path, or edit the path in code below.
+This is shorthand to connect to openVPN for HTB or THM as cistomize as you like.
+```bash
+#----- CTF's -----
+#HackTheBox
+htb(){
+  pid=$(pgrep openvpn | sed -ne 's/\([0-9]*\)/\1/p'); sudo kill $pid
+  cd $HOME/ctf/thm/
+  sudo openvpn *.ovpn </dev/null &>/dev/null &
+  clear
+}
 
+#TryHackMe
+thm(){
+  pid=$(pgrep openvpn | sed -ne 's/\([0-9]*\)/\1/p'); sudo kill $pid
+  cd $HOME/ctf/thm/
+  sudo openvpn *.ovpn </dev/null &>/dev/null &
+  clear
+}
+```
 
 
 ### 7. Adding new user
