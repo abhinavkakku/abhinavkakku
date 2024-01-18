@@ -287,6 +287,28 @@ ex() {
 gobustdir(){gobuster dir -u "$1" -w "/usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt" -t 200 }
 ```
 
+The below functions can be added to zshrc or bashrc to ease out, remember to have the CTF directory setup ( from above), and placed the respective OpenVPN file in mentioned path, or edit the path in code below.
+This is shorthand to connect to openVPN for HTB or THM as cistomize as you like.
+
+I am thinking to replace this openvpn connection part with alias to keep it simple.
+```bash
+#----- CTF's -----
+#HackTheBox
+htb(){
+  pid=$(pgrep openvpn | sed -ne 's/\([0-9]*\)/\1/p'); sudo kill $pid
+  cd $HOME/ctf/thm/
+  sudo openvpn *.ovpn </dev/null &>/dev/null &
+  clear
+}
+
+#TryHackMe
+thm(){
+  pid=$(pgrep openvpn | sed -ne 's/\([0-9]*\)/\1/p'); sudo kill $pid
+  cd $HOME/ctf/thm/
+  sudo openvpn *.ovpn </dev/null &>/dev/null &
+  clear
+}
+```
 
 
 ### 7. Adding new user
