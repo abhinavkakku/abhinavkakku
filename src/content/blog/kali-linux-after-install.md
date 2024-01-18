@@ -110,11 +110,7 @@ autologin-user-timeout=0
 
 ## 5. Essential Packages to Install
 
-to be edited
-#### 5.1 Install Additional repositories
-```bash
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
-```
+
 
 ```bash
 sudo apt install software-properties-common
@@ -122,16 +118,7 @@ sudo apt install software-properties-common
 
 
 ```bash
-sudo apt install -y kali-archive-keyring git stow python3 neovim curl python3 zsh tmux texlive-latex-recommended texlive-fonts-extra texlive-latex-extra pandoc evince
-```
-
-#### Obtain the latest or current Kali GPG keys
-to  be verified if this is really required or can be ignored
-```bash
-wget -q -O - https://www.kali.org/archive-key.asc | gpg --import
-# or…
-
-gpg --keyserver hkp://keys.gnupg.net --recv-key 7D8D0BF6
+sudo apt install -y kali-archive-keyring git stow python3 neovim curl python3 zsh tmux texlive-latex-recommended texlive-fonts-extra texlive-latex-extra pandoc evince seclists python-is-python3
 ```
 
 
@@ -235,6 +222,12 @@ alias ls='ls --color=always'
 alias grep="grep --color=auto"
 ```
 
+```bash
+#add these to .zshrc or .bashrc
+export rockyou='/usr/share/wordlists/rockyou.txt.gz'
+export rockyoutxt='/usr/share/wordlists/rockyou.txt'
+export wordlists='/usr/share/wordlists/'
+```
 We can also add some functions in bashrc or zshrc files like below.
 Functions in .zshrc / .bashrc , these files are located in user folder , type cd ~/.zshrc to access or edit.
 
@@ -255,22 +248,7 @@ updater() {
 
 
 
-### 7. Resolve the “Device Not Managed” error
-You need to modify the Network Manager configuration file to resolve this issue. Launch the configuration file in a text editor:
-
-```bash sudo nano /etc/NetworkManager/NetworkManager.conf
-```
-Within the file, add the following lines under the [device] section:
-
-```
-wifi.scan-rand-mac-address=no
-```
-Save the file and terminate the text editor session. Then, restart the Network Manager service to apply the changes:
-
-```bash
-sudo service network-manager restart
-```
-### 8 Adding new user
+### 7. Adding new user
 I never add another user to my machine, mostly it is only me who is using it. So not adding user.
 
 ```bash
