@@ -236,7 +236,7 @@ alias grep="grep --color=auto"
 alias ctf="cd $HOME/ctf && ll"
 
 ```bash
-#add these to .zshrc or .bashrc
+#add these to .zshrc or .bashrc 
 export rockyou='/usr/share/wordlists/rockyou.txt.gz'
 export rockyoutxt='/usr/share/wordlists/rockyou.txt'
 export wordlists='/usr/share/wordlists/'
@@ -283,10 +283,10 @@ ex() {
 
 ```bash
 #----- Directories recon -----
-# I prefer output on the screen and hence output flag and part of command tee -a $2 ar eboth missing in my config.
-#gobustdir <url> <output>
-gobustdir(){sudo gobuster dir -u "$1" -w "/usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt" -t 10 | tee -a $2}
+#gobustdir <url>
+gobustdir(){gobuster dir -u "$1" -w "/usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt" -t 200 }
 ```
+
 The below functions can be added to zshrc or bashrc to ease out, remember to have the CTF directory setup ( from above), and placed the respective OpenVPN file in mentioned path, or edit the path in code below.
 This is shorthand to connect to openVPN for HTB or THM as cistomize as you like.
 ```bash
