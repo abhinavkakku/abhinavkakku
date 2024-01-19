@@ -326,3 +326,8 @@ sudo usermod -aG sudo abhinav
 chsh -s /bin/zsh abhinav
 ```
 
+### 8. FoxyProxy Addon - Mozila
+
+I always tend to add this addon to Browser , and ofcourse configure BurpProxy along with it.
+
+https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/ 
