@@ -285,7 +285,7 @@ gobustdir(){gobuster dir -u "$1" -w "/usr/share/seclists/Discovery/Web-Content/d
 The below functions can be added to zshrc or bashrc to ease out, remember to have the CTF directory setup ( from above), and placed the respective OpenVPN file in mentioned path, or edit the path in code below.
 This is shorthand to connect to openVPN for HTB or THM as cistomize as you like.
 
-I am thinking to replace this openvpn connection part with alias to keep it simple.
+
 ```bash
 #----- CTF's -----
 #HackTheBox
