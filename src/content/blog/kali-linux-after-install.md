@@ -128,7 +128,6 @@ sudo apt install -y kali-archive-keyring git stow python3 neovim curl python3 zs
 
 #### 5.2 python3-pip installation
 ```bash
-wget https://bootstrap.pypa.io/get-pip.py -O get-pip.py && sudo python3 get-pip.py
 python3 -m pip install --upgrade pip
 ```
 
@@ -138,7 +137,7 @@ python3 -m pip install --upgrade pip
 #### 5.4 Install Archive Managers
 
 ```bash
-sudo apt-get install unrar unace rar unrar p7zip zip unzip p7zip-full p7zip-rar file-roller -y
+sudo apt-get install unrar unace p7zip zip unzip p7zip-full p7zip-rar file-roller -y
 ```
 
 
@@ -162,33 +161,29 @@ apt-get install recordmydesktop
 #### 5.8 Setup Wine to use Windows apps
 to be added
 
-#### 5.9 Install Terminator.
+#### 5.9 Install Terminal Multiplexer
+Terminator / Tilix ... whatever your choice is, I am bit less technical to even know the difference, I hardly split Terminals, rather the dumb me opens a new tab in whatever the default terminal is.
 ```bash
-sudo apt-get install terminator
+sudo apt-get install terminator tilix  gnome-terminal -y
 ```
 
-#### 5.10 Tilix Terminal Multiplexer
-only if you need.
-```bash
-sudo apt install tilix guake konsole -y
-```
 
-#### 5.11 Install Code Editor
+#### 5.10 Install Code Editor
 Visual Studio Code (VS Code): ( I prefer over others)
+Download the package from - https://code.visualstudio.com/#alt-downloads
 ```bash
-sudo apt install code
+sudo apt-get install -f ./code_*.deb
 ```
-Sublime Text:
+
+If you are Sublime fan or Atom person
 ```bash
 sudo apt install sublime-text
-```
-Atom:
-```bash
 sudo apt install atom
 ```
 
 
-#### 5.12 Install VLC: (because fun is must)
+
+#### 5.11 Install VLC: (because fun is must)
 ```bash
 sudo apt install vlc
 #if VLC does not runs as expected 
@@ -198,19 +193,19 @@ sudo sed -i s/geteuid/getppid/g /usr/bin/vlc```
 sudo apt-get install aptitude gdebi synaptic
 ```
 
-#### 5.13 html2text
+#### 5.12 html2text
 ```bash
 sudo apt install html2text
 ```
 
-#### 5.14 Install Chromium
+#### 5.13 Install Chromium
 I am now a Chrome/Chromium person more than a Mozila person so...
 ```bash
 sudo apt-get install chromium
 ```
 
 
-#### 5.15 Install/Explore different desktop environments
+#### 5.14 Install/Explore different desktop environments
 ```bash
 sudo apt install kali-desktop-gnome
 sudo apt install kali-desktop-{kde|xfce|gnome......}
@@ -228,7 +223,7 @@ Alias for common tasks
 ```bash
 alias ins="sudo apt install -y"
 alias rem="sudo apt purge -y"
-alias ls='ls --color=always'
+alias ls="ls --color=always"
 alias ll="clear && ls --color=always -rthla"
 alias grep="grep --color=auto"
 ```
@@ -237,9 +232,9 @@ alias ctf="cd $HOME/ctf && ll"
 
 ```bash
 #add these to .zshrc or .bashrc 
-export rockyou='/usr/share/wordlists/rockyou.txt.gz' 
-export rockyoutxt='/usr/share/wordlists/rockyou.txt' #if already gunzip-ed the gz archive
-export wordlists='/usr/share/wordlists/'
+export rockyou="/usr/share/wordlists/rockyou.txt.gz" 
+export rockyoutxt="/usr/share/wordlists/rockyou.txt" #if already gunzip-ed the gz archive
+export wordlists="/usr/share/wordlists/"
 ```
 We can also add some functions in bashrc or zshrc files like below.
 Functions in .zshrc / .bashrc , these files are located in user folder , type cd ~/.zshrc to access or edit.
