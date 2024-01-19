@@ -310,20 +310,20 @@ thm(){
 With newer Kali Linux installs, it does asks for username when instaling Kali, yet if u need to create another user, below is how to, Why mention ? 
 
 ```bash
-adduser abhinav
+adduser abhinavkakku
 #or to create a admin user
-sudo adduser abhinav sudo
+sudo adduser abhinavkakku sudo
 ```
 
 #### Sudo privilleges for new user
 
 ```bash
-sudo usermod -aG sudo abhinav
+sudo usermod -aG sudo abhinavkakku
 
 ```
 #### Granting login shell
 ```bash
-chsh -s /bin/zsh abhinav
+chsh -s /bin/zsh abhinavkakku
 ```
 
 ### 8. FoxyProxy Addon - Mozila
