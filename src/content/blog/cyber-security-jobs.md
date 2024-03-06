@@ -22,7 +22,7 @@ We will soon update Roles and Responsibilities around these jobs (above).
 
 A job can ask more than one skill, where one or more job functions from above can be clubbed together.
 
-Download the above as  PDF - <a href="/files/CyberSecJobs2024" download="Cyber_Security_Jobs_2024.pdf" class="download-button">Download PDF</a>
+Download the above as  PDF - <a href="/files/CyberSecJobs2024.pdf" download="Cyber_Security_Jobs_2024.pdf" class="download-button">Download PDF</a>
 
 Do utilize [Cyber Security Interview Questions](https://ethicalhackx.com/blog/cyber-security-interview/) with above to prepare, and land a Cyber Security Job soon !.
 
