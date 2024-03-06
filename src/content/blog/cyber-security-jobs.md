@@ -1,0 +1,27 @@
+---
+title: Cyber Security Jobs in 2024
+date: 2024-03-06
+author: Abhinav Kumar
+image: {
+  src: "/images/CyberSecJobs.png",
+  alt: "Cyber Security Jobs in 2024",
+}
+description: Cyber Security Job Roles in 2024, check to know more.
+draft: False
+category: Hacking 101
+
+---
+
+
+<img src="/images/CyberSecJobRoles2024.svg" alt="Description" />
+
+Are you preparing for Cyber Security related jobs in 2024 ?
+If yes, you are visiting the right page. Search for one of the jobs from above on Job Portals and prepare accordingly.
+
+We will soon update Roles and Responsibilities around these jobs (above).
+
+A job can ask more than one skill, where one or more job functions from above can be clubbed together.
+
+Download the above as  PDF - <a href="/files/CyberSecJobs2024" download="Cyber_Security_Jobs_2024.pdf" class="download-button">Download PDF</a>
+
+More on this topic will be updated soon!
