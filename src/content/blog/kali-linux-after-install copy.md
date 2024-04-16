@@ -127,7 +127,7 @@ sudo apt install software-properties-common
 
 
 ```bash
-sudo apt install -y kali-archive-keyring git stow python3 neovim curl python3 zsh tmux texlive-latex-recommended texlive-fonts-extra texlive-latex-extra pandoc evince seclists python-is-python3 golang gobuster rlwrap dirsearch
+sudo apt install -y kali-archive-keyring git stow python3 neovim curl python3 zsh tmux texlive-latex-recommended texlive-fonts-extra texlive-latex-extra pandoc evince seclists python-is-python3 golang gobuster rlwrap dirsearch html2text
 ```
 
 
@@ -192,15 +192,12 @@ sudo apt install atom
 ```bash
 sudo apt install vlc
 #if VLC does not runs as expected 
-sudo sed -i s/geteuid/getppid/g /usr/bin/vlc```
+sudo sed -i s/geteuid/getppid/g /usr/bin/vlc
+```
+
 ### Install Aptitude, Gdebi and Synaptic
 ```bash
 sudo apt-get install aptitude gdebi synaptic
-```
-
-#### 5.12 html2text
-```bash
-sudo apt install html2text
 ```
 
 #### 5.13 Install Chromium
