@@ -45,7 +45,7 @@ echo "deb-src http://http.kali.org/kali kali-rolling main contrib non-free non-f
 ### 3.1 Updating sources with fast mirrors
 
 ```bash
-echo "deb https://mirrors.ocf.berkeley.edu/kali kali-rolling main contrib non-free" | sudo tee -a /etc/apt/sources.list
+echo "deb https://mirrors.ocf.berkeley.edu/kali kali-rolling main contrib non-free" | sudo tee /etc/apt/sources.list
 echo "deb-src https://mirrors.ocf.berkeley.edu/kali kali-rolling main contrib non-free" | sudo tee -a /etc/apt/sources.list
 
 # Update the Repository after changing mirror
@@ -84,9 +84,9 @@ Go to the Settings > now goto Power Manager > click on the Display tab and disab
 
 ```bash
 cd /etc/ssh
-mkdir original_ssh_keys
-mv ssh_host_* original_ssh_keys/
-dpkg-reconfigure openssh-server
+sudo mkdir original_ssh_keys
+sudo mv ssh_host_* original_ssh_keys/
+sudo dpkg-reconfigure openssh-server
 ```
 
 ### 4.5 Configure Google DNS / OpenDNS Servers
@@ -103,6 +103,9 @@ echo "nameserver 1.1.1.1" | sudo tee /etc/resolv.conf
 I do this , many may find this as bad practice but.... 
 
 ```bash
+#for GNOME
+sudo nano /etc/gdm3/daemon.conf
+#for XFCE
 sudo nano /etc/lightdm/lightdm.conf
 ```
 Within the file, find the [SeatDefaults or Seat*] section and add the following lines:
@@ -166,7 +169,7 @@ to be added
 #### 5.9 Install Terminal Multiplexer
 Terminator / Tilix ... whatever your choice is, I am bit less technical to even know the difference, I hardly split Terminals, rather the dumb me opens a new tab in whatever the default terminal is.
 ```bash
-sudo apt-get install terminator tilix  gnome-terminal -y
+sudo apt-get install terminator gnome-terminal -y
 ```
 
 
@@ -203,7 +206,7 @@ sudo apt install html2text
 #### 5.13 Install Chromium
 I am now a Chrome/Chromium person more than a Mozila person so...
 ```bash
-sudo apt-get install chromium
+sudo apt-get install chromium -y
 ```
 
 
@@ -219,7 +222,8 @@ Getting your local WiFi or LAn IP and Tunnel IP (HTB or THM OpenVPN IP)
 ```bash
 #alias for getting VPN IP
 alias myip="ip -o -4 addr show eth0 | awk '{print \$4}' | cut -d'/' -f1"
-alias tunip="ip -o -4 addr show tun0 | awk '{print \$4}' | cut -d'/' -f1"```
+alias tunip="ip -o -4 addr show tun0 | awk '{print \$4}' | cut -d'/' -f1"
+```
 
 Alias for common tasks
 ```bash
@@ -293,7 +297,7 @@ This is shorthand to connect to openVPN for HTB or THM as cistomize as you like.
 #HackTheBox
 htb(){
   pid=$(pgrep openvpn | sed -ne 's/\([0-9]*\)/\1/p'); sudo kill $pid
-  cd $HOME/ctf/thm/
+  cd $HOME/ctf/htb/
   sudo openvpn *.ovpn </dev/null &>/dev/null &
   clear
 }
