@@ -128,6 +128,8 @@ sudo apt install software-properties-common
 sudo apt install -y kali-archive-keyring git stow python3 neovim curl python3 zsh tmux texlive-latex-recommended texlive-fonts-extra texlive-latex-extra pandoc evince seclists python-is-python3 golang gobuster rlwrap dirsearch html2text gedit
 ```
 
+Changing default editor to be added later
+
 #### 5.2 python3-pip installation
 ```bash
 python3 -m pip install --upgrade pip
