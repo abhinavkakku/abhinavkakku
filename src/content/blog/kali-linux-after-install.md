@@ -78,7 +78,7 @@ mkdir -p $HOME/ctf/{htb,thm}
 ```
 
 ### 4.3 Disable your Lock Screen
-Go to the Settings > now goto Power Manager > click on the Display tab and disable the blue button.
+Go to the Settings > now goto Power Manager > click on the Display tab and disable screen lockout.
 
 ### 4.4 Change your SSH Keys & default Password
 
@@ -108,6 +108,7 @@ sudo nano /etc/gdm3/daemon.conf
 #for XFCE
 sudo nano /etc/lightdm/lightdm.conf
 ```
+
 Within the file, find the [SeatDefaults or Seat*] section and add the following lines:
 
 ```
@@ -119,24 +120,18 @@ autologin-user-timeout=0
 
 ## 5. Essential Packages to Install
 
-
-
 ```bash
 sudo apt install software-properties-common
 ```
 
-
 ```bash
-sudo apt install -y kali-archive-keyring git stow python3 neovim curl python3 zsh tmux texlive-latex-recommended texlive-fonts-extra texlive-latex-extra pandoc evince seclists python-is-python3 golang gobuster rlwrap dirsearch html2text
+sudo apt install -y kali-archive-keyring git stow python3 neovim curl python3 zsh tmux texlive-latex-recommended texlive-fonts-extra texlive-latex-extra pandoc evince seclists python-is-python3 golang gobuster rlwrap dirsearch html2text gedit
 ```
-
 
 #### 5.2 python3-pip installation
 ```bash
 python3 -m pip install --upgrade pip
 ```
-
-
 
 
 #### 5.4 Install Archive Managers
@@ -147,24 +142,44 @@ sudo apt-get install unrar unace p7zip zip unzip p7zip-full p7zip-rar file-rolle
 
 
 #### 5.5 Install Guest Additions to Enable Fullscreen, Clipboard sharing & Drag n Drop
-to be added
+VMware / VirtualBox / Parallels each require their own tool to make interaction and functionality better, so install respective ones.
+This section will be removed soon.
 ```bash
+#Open VM Tools
 sudo apt install open-vm-tools -y
 ```
 
 
 #### 5.6 Install Java:
-to be added
 
+```bash
+sudo apt install default-jdk
+#OR
+sudo apt-cache search openjdk
+
+#Verify java installation by checking version
+java --version
+
+#Choose the Java Version/Provider
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
+```
 
 #### 5.7 Install Screen Recorder
-I have been using Kali in VM like environemnt where I use OBS Studio on host instead of recorder in Kali
+I have been using Kali in VM like environemnt where I use OBS Studio on host instead of recorder in Kali.
+I will remove this section in coming time.
 ```bash
 apt-get install recordmydesktop
 ```
 
 #### 5.8 Setup Wine to use Windows apps
-to be added
+I rarely use this, I have dual-boot setup. Still...
+
+```bash
+sudo dpkg --add-architecture i386
+sudo apt-get update
+sudo apt-get install wine32
+```
 
 #### 5.9 Install Terminal Multiplexer
 Terminator / Tilix ... whatever your choice is, I am bit less technical to even know the difference, I hardly split Terminals, rather the dumb me opens a new tab in whatever the default terminal is.
@@ -215,7 +230,7 @@ sudo apt install kali-desktop-{kde|xfce|gnome......}
 
 ## 6. Setup some alias (command-shortcuts) for your terminal.
 
-Getting your local WiFi or LAn IP and Tunnel IP (HTB or THM OpenVPN IP)
+Getting your local WiFi or LAN IP and Tunnel IP (HTB or THM OpenVPN IP)
 ```bash
 #alias for getting VPN IP
 alias myip="ip -o -4 addr show eth0 | awk '{print \$4}' | cut -d'/' -f1"
