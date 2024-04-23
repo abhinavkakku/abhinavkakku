@@ -149,6 +149,8 @@ This section will be removed soon.
 sudo apt install open-vm-tools -y
 ```
 
+More Virtual Machine essential configurations to be included in coming updates.
+
 
 #### 5.6 Install Java:
 
